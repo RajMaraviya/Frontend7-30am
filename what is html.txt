@@ -1,0 +1,55 @@
+**what is html?
+
+-html stands for hypertext markup language
+-1st tim relised in 1986 by tim burner lee
+-used to make a website homepage or webpage
+-is a markup language
+-is a case insensitive markup language
+eg. <html> <HTML> <HtMl>
+-file extension is .html ot .htm
+-is used tag for creating webpage structure
+eg. <html>, <p>, <b>, <h1>, <table> etc
+-provides two types of tag
+	-paired tag: -which start and closed <p>....</p>
+	-Non pired tag: -which not need to closed <br> <hr> <img>
+			<meta> <link> <image>
+
+
+
+**what is hypertext?
+
+-is used to redirect one page to another i.e. called hypertext.
+eg.: <a href="https://www.google.com"> click to go google>></a>
+
+
+
+**what is markup language ?
+
+-html is not any language its a markup language
+eg. markup means you can create any webpage for any language you can markup html
+	php+html, java+html....
+
+
+
+**html structure:
+structure.html
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+</head>
+<body>
+</body>
+</html>
+
+Note: <!DOCTYPE html> this is a tag i.e. support html4 and html5 all tags in your browser.
+
+
+
+**html head tag:
+<title></title>
+<meta>
+<style></style>
+<link>
+<script></script>
+<noscript></noscript>
