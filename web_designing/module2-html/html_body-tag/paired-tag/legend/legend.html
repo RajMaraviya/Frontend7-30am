@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <center>
+        <form method="post" action="welcome.html">
+            <fieldset style="width: 40%;">
+                <legend>Registration</legend>
+            <table align="center" border="0">
+                <tr>
+                    <th align="left">Enter email </th>
+                    <td><input type="text" name="email" placeholder="Enter Email" required></td>
+                </tr>
+                <tr>
+                    <th align="left">Create password </th>
+                    <td><input type="password" name="password" placeholder="Enter new Password" required></td>
+                </tr>
+                <tr>
+                    <th align="left">Confirm password </th>
+                    <td><input type="password" name="password" placeholder="Re-Enter new Password" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="left"><input type="file" placeholder="Enter Image"></td>
+                </tr>
+                <tr>
+                    <td align="left">
+                    <select name="state" placeholder="states" required>
+                        <option value="">-states-</option>
+                        <option value="1">Gujarat</option>
+                        <option value="2">Tamilnadu</option>
+                        <option value="3">Hydrabad</option>
+                        <option value="4">Chennai</option>
+                        <option value="5">Karnataka</option>
+                        <option value="6">Telangana</option>
+                    </select>
+                    </td>
+                    <td align="right">
+                        <select name="state" placeholder="city" required>
+                            <option value="">-Cities-</option>
+                            <option value="1">Ahemdabad</option>
+                            <option value="2">Rajkot</option>
+                            <option value="3">Gandhingar</option>
+                            <option value="4">Surat</option>
+                            <option value="5">Anand</option>
+                            <option value="6">Vadodara</option>
+                        </select>
+                        </td>
+                </tr>
+
+                <tr>
+                    <td align="left"><input type="submit" name="Register" value="Register"></td>
+                    <td align="right"><input type="reset" value="Reset" ></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><a href="#">Forget password ?</a></td>
+                </tr>
+            </table>
+            </fieldset>
+        </form>
+    </center>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!-- 
+    It can be done by using the rowspan and colspan attribute in HTML
+     The rowspan is used to merge or combine the number of cells in a row whereas the colspan is used to merge column cells in a table.
+ -->
+
+ <!DOCTYPE html>
+<html>
+  
+<head>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 6px;
+        }
+    </style>
+</head>
+  
+<body>
+    <h2>How to merge table cells in HTML?</h2>
+  
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>raj</td>
+            <td rowspan="2">21</td>
+        </tr>
+        <tr>
+            <td>raj</td>
+        </tr>
+    </table>
+</body>
+</html>
