@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag element selector</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        div{
+            margin-left: 200px;
+        }
+        [href]{
+            color: red;
+        }
+        form{
+            box-shadow: 0px 0px 60px 10px;
+        }
+        input[type]{
+            height: 40px;
+            width: 300px;
+            border: none;
+            border-bottom: 2px solid black;
+        }
+        input[type="submit"],input[type="reset"]{
+            width: 150px;
+            border: none;
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="#">service</a></li>
+            </ul>
+        
+            <form action="#">
+                <input type="text" placeholder="Name"><br>
+                <input type="email" name="email" placeholder="email"><br>
+                <input type="password" placeholder="password"><br><br>
+                <input type="submit" value="submit">
+                <input type="reset" value="reset">
+            </form>
+    </div>
+</body>
+</html>

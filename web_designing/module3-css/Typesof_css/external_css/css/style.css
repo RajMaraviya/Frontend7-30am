@@ -1,0 +1,55 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(to right, blue 50%, orange 50%);
+    width: 100%;
+    overflow-x: hidden;
+}
+.main{
+    animation: bounceInLeft 2s alternate;
+    float: left;
+    color: white;
+    width: 40%;
+    margin: 30px;
+    margin-top: 200px;
+}
+
+.login{
+    background-image: url(../imgs/login.gif);
+    background-size: 190% 500px;
+    background-position: center;
+    float: right;
+    margin-top: 5%;
+    margin-right: 8%;
+    padding: 12px 12px;
+    width: 30%;
+    height: 500px;
+}
+p{
+    text-align: justify;
+}
+
+h2{
+    animation: heartBeat 2s infinite;
+}
+
+input[type="text"],input[type="password"]{
+    font-size: 16px;
+    
+    background-color: rgba(255, 0, 0, 0.3);
+    color: white;
+    width: 300px;
+    height: 25px;
+    border: 0.1px solid black;
+    border-radius: 20px;
+}
+
+
+input[type="submit"]{
+    background-color: rgba(0, 91, 18, 0.391);
+    margin-top: 15px;
+    width: 100px;
+    height: 25px;
+    border: none;
+    border-radius: 20px;
+}
