@@ -1,0 +1,16 @@
+body{
+    background-image: url(../media/flower.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+div{
+    background-image: url(../media/luxury-ornamental-mandala-design-background-gold-color-vector_1159-14387.webp);
+    /* background-size: 30% 50%; */
+    /* background-size: auto; */
+    /* background-size: cover; */
+       background-size: 200px 200px;
+    color: white;
+    
+}

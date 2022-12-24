@@ -1,0 +1,15 @@
+@import url(font/font.css);
+
+body{
+    background-color: whitesmoke;
+    font-size: 20px;
+}
+
+#a{
+    text-align: justify;
+    font-family: font2;
+}
+
+#b{
+    font-family: font1;
+}

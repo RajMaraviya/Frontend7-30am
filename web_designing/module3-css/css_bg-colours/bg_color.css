@@ -1,0 +1,11 @@
+body{
+    background-color: black;
+    color: cyan;
+}
+
+div{
+    background-color: darkorange;
+    /* background-color: rgb(255, 140, 0); */
+    /* background-color: #FF8C00; */
+    color: lightgray;
+}

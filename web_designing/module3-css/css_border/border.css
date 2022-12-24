@@ -1,0 +1,18 @@
+body{
+    background-color: orange;
+}
+
+div{
+    /* border: darkslategrey 6px solid; */
+    /* border: 6px dotted yellow; */
+    /* border: 6px double yellow; */
+    /* border: 6px outset green; */
+    /* border: 6px inset green; */
+
+    border-bottom: 6px double red;
+    border-top: 6px double lightgreen;
+    border-left: 6px double yellow;
+    border-right: 6px double black;
+
+    border-radius: 15px;
+}

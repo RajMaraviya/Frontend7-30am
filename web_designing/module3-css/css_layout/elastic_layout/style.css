@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: lightgrey;
+}
+.header{
+    width: 80em;
+    height: 2.8125em;
+    background-color: #2874f0;
+    position: sticky;
+    top: 0;
+}
+.nav{
+    margin: auto;
+    width: 80em;
+    height: 7.5em;
+    background-color: white;
+    /* position: sticky;
+    top: 45px; */
+}
+.hero-section{
+    margin: auto;
+    margin-top: 0.625em;
+    width: 75em;
+    height: 21.875em;
+    background-color: white;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+img{
+    height: 46.875;
+    width: 81.25em;
+    
+}
+.content{
+    margin: auto;
+    margin-top: 1%;
+    width: 75em;
+    height: 21.875em;
+    background-color: white;
+}
+.footer{
+    background-color: #212121;
+    width: 80em;
+    height: 18.75em;
+}
