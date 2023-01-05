@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .main{
+            width: 98%;
+            height: 500px;
+            background: linear-gradient(to right, #4230ba 2%, #18B8FB 70%);
+        }
+        .left-side{
+            margin-top: 140px;
+            margin-left: 30px;
+            width: 20%;
+            float: left;
+            /* border: 0.1px solid; */
+        }
+        .left-side .logo{
+            width: 80px;
+            height: 80px;
+            transform: rotate(-45deg);
+            margin-left: 90px;
+            color: #ffffff;
+        }
+        .left-side h3{
+            margin: 10px 35%;
+            font-weight: 500;
+            color: #ffffff;
+        }
+        .left-side pre{
+            color: #ffffff;
+            font-weight: 300;
+        }
+        .left-side input[type="submit"]{
+            margin-left: 20px;
+            margin-top: 40px;
+            border: none;
+            border-radius: 25px;
+            background-color: #ffffff;
+            width: 100px;
+            height: 25px;
+        }
+        .right-side{
+            margin-top: 40px;
+            margin-right: 10px;
+            height: 420px;
+            float: right;
+            width: 72%;
+            border-top-left-radius: 50px 200px;
+            border-bottom-left-radius: 50px 200px;
+            /* border-radius: 100px 0px 0px 100px; */
+            background-color: #ebebeb;
+        }
+        .right-side .btn{
+            float: right;
+            margin: 10px 20px;
+            border-radius: 25px;
+            background-color: #0946BD;
+            width: 170px;
+            height: 35px;
+            display: flex;
+            font-size: 12px;
+            color: #ffffff;
+        }
+        .right-side .btn p{
+            margin: 10px 12px;
+        }
+        .right-side .sub-btn p{
+            margin: 8px 20px;
+        }
+        .right-side .btn .sub-btn{
+            width: 100px;
+            height: 29px;
+            margin: 3px;
+            border-radius: 25px;
+            background-color: #ffffff;
+            font-size: 12px;
+            color: #0946BD;
+        }
+        .right-side h2{
+            font-weight: 400;
+            margin: 80px 0px 0px 350px;
+        }
+        .form {
+            margin: 30px auto;
+            width: 700px;
+            height: 260px;
+        }
+        .form .l-side{
+            width: 50%;
+            float: left;
+        }
+        .right-side input[type="text"],input[type="password"]{
+            margin: 7px 15px;
+            width: 90%;
+            border: 1px solid #7C7C8C;
+            height: 25px;
+            border-radius: 3px;
+        }
+        .right-side input[type="radio"]{
+            height: 12px;
+            margin-left: 15px;
+        }
+        .form .r-side{
+            width: 50%;
+            float: left;
+        }
+        .r-side select{
+            margin: 7px 0px 7px 15px;
+            width: 92%;
+            height: 30px;
+            color: #626262;
+            font-weight: 300;
+            background-color: #ffffff;
+            border: 1px solid #7C7C8C;
+            border-radius: 3px;
+        }
+        .r-side input[type="submit"]{
+            margin: 15px;
+            float: right;
+            border: none;
+            border-radius: 25px;
+            background-color: #0946BD;
+            color: #fff;
+            width: 100px;
+            height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="left-side">
+            <i class="fa-solid fa-rocket fa-5x logo"></i>
+            <h3>Welcome</h3>
+            <pre>          Lorem ipsum dolor sit 
+   amet consectetur adipisicing. 
+        elit Facilis, voluptatum?</p>
+            <input type="submit" value="Login">
+        </div>
+        <div class="right-side">
+            <div class="btn">
+                <div class="sub-btn"><p>Employee</p></div>
+                <p>head</p>
+            </div>
+            <h2>Apply as a Employee</h2>
+            <div class="form">
+                <div class="l-side">
+                    <input type="text" placeholder="First Name" required>
+                    <input type="text" placeholder="Last Name" required>
+                    <input type="Password" placeholder="Password" required>
+                    <input type="Password" placeholder="Confirm Password" required>
+                    <div class="gender">
+                        <input type="radio">Male
+                        <input type="radio">Female
+                    </div>
+                </div>
+                <div class="r-side">
+                    <input type="text" placeholder="Your Email" required>
+                    <input type="text" placeholder="Your Phone" required>
+                    <select name="" id="select">
+                        <option value="0">Please select your seccurity Question</option>
+                    </select>
+                    <input type="text" placeholder="Enter Your Answere" required>
+                    <input type="submit" value="Register">
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
