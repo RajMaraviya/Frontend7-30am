@@ -1,0 +1,123 @@
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.header{
+    width: 100%;
+    height: 50px;
+    padding: 5px 10px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+.call-us,.search,.social-media{
+    text-align: center;
+    border: 1px solid;
+    border: none;
+}
+.call-us p{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.search input[type="search"]{
+    height: 40px;
+    width: 100%;
+    border: 1.5px inset solid lightgray;
+    border-radius: 5px;
+}
+.social-media .social{
+    font-size: 30px;
+    letter-spacing: 10px;
+    margin-top: 5px;
+}
+.navbar{
+    position: sticky;
+    top: 60px;
+    background-color: black;
+    width: 100%;
+    height: 60px;
+    margin: 0;
+    padding: 0px 0px;
+}
+li{
+    list-style: none;
+}
+.navbar-link{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.dropdown a{
+    color: white;
+    text-decoration: none;
+}
+.dropdown{
+    width: fit-content;
+    position: relative;
+    padding: 20px;
+}
+.dropdown:hover, a:hover{
+    background-color: rgb(85, 111, 134);
+    color: black;
+}
+.dropdown:hover .menu{
+    display: block;
+}
+.menu{
+    display: none;
+    position: absolute;
+    background-color: #3db95e;
+    list-style: none;
+    width: 165px;
+    margin-left: -20px;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+.menu li{
+    margin: 10px;
+}
+#acc{
+    width: 91px;
+}
+.main{
+    width: 100%;
+    height: 600px;
+    background-color: burlywood;
+}
+.hero-section {
+    width: 90%;
+    height: 350px;
+    background-color: lightgray;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.main-content {
+    width: 90%;
+    height: auto;
+    padding: 15px;
+    margin-left: 5%;
+}
+.leftsidebar {
+    width: 45%;
+    height: auto;
+    margin: 8px;
+      margin-top: 8px;
+    padding: 15px;
+    box-shadow: 0px 2px 0px 2px lightgray;
+    float: left;
+    margin-top: 4%;
+}
+.rightsidebar {
+    width: 45%;
+    height: auto;
+    margin: 8px;
+    margin-top: 8px;
+    padding: 15px;
+    box-shadow: 0px 2px 0px 2px lightgray;
+    float: left;
+    margin-top: 4%;
+}
