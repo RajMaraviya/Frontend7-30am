@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        fieldset
+        {
+            width: 40%;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <fieldset>
+    <legend align="center"> <h2>Contact us Form</h2></legend>    
+    <form name="frm" id="frm" action="welcome.html" method="" enctype="multipart/form-data">
+
+        <label>Enter Email</label>
+        <input type="text" name="email" placeholder="Enter email *" required>
+        <br><br>
+        <label>Enter Name</label>
+        <input type="text" name="name" placeholder="Enter Name *" required>
+        <br><br>
+        <label>Enter Phone</label>
+        <input type="number" name="phone" placeholder="Enter Phone *" required>
+        <br><br>
+        <label>Enter subject</label>
+        <select name="subject" placeholder="Enter subject *" required>
+        <option value="">-select subject-</option> 
+        <option value="1">customer care number</option>
+        <option value="2">Return products</option>
+        <option value="3">complain with services</option> 
+        </select>    
+        <br><br>
+        <label>Message</label>
+        &nbsp; &nbsp; &nbsp;
+        <textarea name="message" placeholder="Enter your Message" required></textarea>
+        <br><br>
+        <input type="submit" name="submit" value="Send >>">
+
+    </form>
+    </fieldset>
+    </center>
+</body>
+</html>

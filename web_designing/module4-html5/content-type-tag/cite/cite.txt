@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <blockquote style="background-color: black; color:white; padding:15px">
+        <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas unde cum veniam<i><u> pritesh kumar patel</u></i> iure ipsa nam iusto. Eveniet amet, quis libero delectus beatae quasi itaque repellendus molestias unde facilis, accusamus odio.</q>
+        <p align="right"><strong style="font-weight: 600;">By:Brijesh Kumar Pandey</strong></p>
+    </blockquote>
+    </body>
+    </html>

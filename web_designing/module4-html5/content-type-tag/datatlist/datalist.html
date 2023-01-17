@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+
+    <h1>Forms</h1>
+    <form method="post" action="../progress/progress.html">
+        Email * :<input type="email" name="email" placeholder="Email *" required>
+        <br><br>
+        URL * :<input type="url" name="url" placeholder="URL *" required>
+        <br><br>
+        state :<select name="state">
+            <option value="">-state-</option>
+            <option value="">Gujrat</option>
+        </select>
+        <br><br>
+
+        <!-- Datalist ex... -->
+
+        Dropdown datatlist :
+        <input list="browsers" name="browser" placeholder="List of browser">
+        <datalist id="browsers">
+            <option value="firefox">
+            <option value="chrome">
+            <option value="internet explorer">
+            <option value="opera">
+            <option value="uc browser">
+            <option value="safari">
+            <option value="brave">
+        </datalist>
+        <br><br>
+        <input type="submit" name="sub" value="Submit">
+    </form>
+    
+</body>
+</html>

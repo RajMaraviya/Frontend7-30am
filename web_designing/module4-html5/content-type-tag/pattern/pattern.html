@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+
+    <center>
+    <h1>Forms</h1>
+    <form action="welcome.html" method="post">
+
+        Enter Name * :<input type="text" name="name" placeholder="Name *" pattern="[a-zA-Z0-9]+" required autocomplete="off">
+        <br><br>
+
+        Enter Email * :<input type="email" name="email" placeholder="Email *" autocomplete="off"  required>
+        <br><br>
+
+        Enter Password * :<input type="password" name="password" placeholder="Password *"  pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required autocomplete="off">
+        <br><br>
+        <input type="submit" name="sub" value="submit">
+    </form>
+
+    </center>
+</body>
+</html>
