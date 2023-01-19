@@ -4,8 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlipKart</title>
+    <title>FlipKart Home</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $(".popup").click(function () {
+                if ($(".modal").hasClass("active")) {
+                    $(".modal").removeClass("active");
+                }
+                else {
+                    $(".modal").addClass("active");
+                }
+                return false
+            });
+        });
+    </script>
     <style>
         @import url(css/style.css);
     </style>
@@ -37,7 +51,12 @@
             <a href="#">Mens's producs</a>
             <a href="#">Kids's producs</a>
             <a href="#">Offers</a>
-            <a href="#">Account</a><i class="fa fa-caret-down" style="margin-left: -10px;"></i>
+            <a href="#" class="dropdown">Account
+                <ul class="dropdown-list">
+                    <li><i class="fa-solid fa-user-plus"></i> &nbsp; Register</li>
+                    <li class="popup"><i class="fa-solid fa-arrow-right-to-bracket"></i> &nbsp;  &nbsp;Login</li>
+                </ul>
+            <i class="fa fa-caret-down"></i></a>
             <a href="contact-us.html">Contact us</a>
         </div>
     </nav>
@@ -303,5 +322,18 @@
                 <span>Suggest an edit | Own this business</span></h5>
         </div>
     </footer>
+    <div class="modal">
+        <div class="log-form">
+            <div class="l-s">
+                <h2>Login form</h2>
+                <p>Get access to your Orders, <br> Wishlist and <br> Recommendations</p>
+                <img src="images/login-icon.png" alt="login-icon">
+            </div>
+            <div class="r-s">
+                <input type="email" placeholder="Enter Email *">
+                <input type="password" placeholder="Enter password *">
+            </div>
+        </div><!--end log form -->
+    </div>
 </body>
 </html>
