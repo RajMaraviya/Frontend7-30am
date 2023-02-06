@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>perspective</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            position: relative;
+            display: flex;
+        }
+        .box1{
+            margin: 10px 40%;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            background-color: maroon;
+            
+        }
+        .box2{
+            margin: -25px 40%;
+            width: 200px;
+            height: 235px;
+            position: absolute;
+            background-color: magenta;
+            transition: 0.5s ease-in-out all;
+        }
+        .box2:hover{
+            transform: perspective(500px) rotateX(50deg) scale(1.18);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

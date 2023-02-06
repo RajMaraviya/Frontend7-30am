@@ -9,15 +9,15 @@
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function () {
+            $(".bar").click(function () {
+                $(".menu").fadeToggle();
+            })
             $(".popup").click(function () {
-                if ($(".modal").hasClass("active")) {
-                    $(".modal").removeClass("active");
-                }
-                else {
-                    $(".modal").addClass("active");
-                }
-                return false
-            });
+                $(".modal").fadeToggle();
+            })
+            $("#close").click(function () {
+                $(".modal").fadeToggle();
+            })
         });
     </script>
     <style>
@@ -27,12 +27,12 @@
 <body>
     <header>
         <div class="col-1">
-            <p><i class="fa-solid fa-phone"></i>(+91) 73357217</p>            
+            <i class="fa-solid fa-bars bar"></i><h3>Flipkart</h3><i><sup>Lite</sup></i>
         </div>
         <div class="col-2">
             <input type="search" id="search" name="search" placeholder="Search your products!">
         </div>
-        <div class="col-3" align="right">
+        <div class="col-3">
             <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-instagram"></i>
             <i class="fa-brands fa-twitter"></i>
@@ -45,7 +45,7 @@
     </header>
     <nav>
         <div class="logo"><i class="fa-solid fa-basket-shopping"></i><h4>Shraddha commerce</h4></div>
-        <div class="menu">
+        <div class="menu" id="menu">
            <a href="#">home</a></li>
             <a href="#">Womens's producs</a>
             <a href="#">Mens's producs</a>
@@ -60,6 +60,7 @@
             <a href="contact-us.html">Contact us</a>
         </div>
     </nav>
+    <!-- main slider -->
     <div class="main-slider">
         <img src="images/orange.webp" alt="orange background">
     </div>
@@ -325,15 +326,20 @@
     <div class="modal">
         <div class="log-form">
             <div class="l-s">
-                <h2>Login form</h2>
+                <h2>Login form &nbsp;<i class="fa-regular fa-user"></i></h2>
                 <p>Get access to your Orders, <br> Wishlist and <br> Recommendations</p>
                 <img src="images/login-icon.png" alt="login-icon">
             </div>
             <div class="r-s">
-                <input type="email" placeholder="Enter Email *">
-                <input type="password" placeholder="Enter password *">
+                <button id="close">x</button>
+                <div class="center">
+                    <input type="email" placeholder="Enter Email *">
+                    <input type="password" placeholder="Enter password *">
+                    <input type="submit" value="Login"><a href="#">Forgot Password??</a>
+                    <p>Don't have an account? <a href="#">Register here</a></p>
+                </div>
             </div>
-        </div><!--end log form -->
+        </div>
     </div>
 </body>
 </html>

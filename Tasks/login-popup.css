@@ -1,0 +1,96 @@
+body {
+	overflow-x: hidden;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background: url(http://farm8.staticflickr.com/7064/6858179818_5d652f531c_h.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+/* login popup */
+.log-form {
+	width: 50%;
+	height: auto;
+	background: linear-gradient(to right, #4575ec 40%, #fff 20%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: 0px 2px 50px #00000040;
+}
+.log-form .l-s{
+	float: left;
+	width: 40%;
+	color: #fff;
+}
+.log-form .l-s h2{
+	margin: 0;
+	margin-top: 40px;
+	font-size: 30px;
+	font-weight: 700;
+	text-align: center;
+}
+.log-form .l-s h2 i{
+    font-size: 25px;
+}
+.log-form .l-s p{
+	width: 70%;
+	font-weight: 500;
+    font-size: 12px;
+	margin: 2% 0px 0px 14%;
+}
+.log-form .l-s img{
+	width: 100%;
+}
+
+.log-form .r-s{
+	float: right;
+	width: 60%;	
+}
+.log-form .r-s .center{
+    margin: 10% 15%;
+    width: 70%;
+}
+.log-form .r-s input{
+    background: transparent;
+    border: none;
+    padding: 2px 10px;
+    border-bottom: 1px solid #205AEC;
+    border-radius: 4px;
+    width: 75%;
+    margin: 15px 0px 15px 0px;
+}
+.log-form .r-s button{
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #c60000;
+    border-radius: 3px;
+    border: none;
+    color: #ffffff;
+	float: right;
+}
+.log-form .r-s input[type="submit"]{
+    width: fit-content;
+    padding: 5px 10px;
+    color: #fff;
+    margin: 0px;
+    border-radius: 3px;
+    border: none;
+    background-color: #205AEC;
+}
+.log-form .r-s a{
+    font-weight: 600;
+    font-size: 13px;
+}
+.log-form .r-s p{
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+
+.modal {
+	display: none;
+}
+
+.modal.active {
+	display: block;
+}

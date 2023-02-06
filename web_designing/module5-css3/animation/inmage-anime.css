@@ -1,0 +1,92 @@
+body{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /* One Time
+    animation: back-color-anime 2s alternate; */
+    /*
+    One Time over
+    animation: back-color-anime 2s forwards; */
+
+    animation: back-color-anime 5s infinite;
+}
+/* For two color only */
+@keyframes back-color-anime {
+    0%{
+        background-image: url(../filter/Jasper\ national\ Park\ snow.jpg);
+        background-size: cover;
+    }
+    25%{
+        background-image: url(../filter/Jasper\ national\ Park\ green.jpg);
+        background-size: cover;
+    }
+    50%{
+        background-image: url(../filter/germany-castle-green.jpg);
+        background-size: cover;
+    }
+    75%{
+        background-image: url(../filter/pexels-stanley-ndua-3661973.jpg);
+        background-size: cover;
+    }
+}
+
+/* For multi color */
+@keyframes first {
+    14%{
+        background-color: #FF0000;
+        box-shadow: 0px 0px 5px #9400D3;
+    }
+    28%{
+        background-color: #FF7F00;
+        box-shadow: 0px 0px 5px #4B0082;
+    }
+    42%{
+        background-color: #FFFF00;
+        box-shadow: 0px 0px 5px ;
+    }
+    56%{
+        background-color: #00FF00;
+        box-shadow: 0px 0px 5px #0000FF;
+    }
+    70%{
+        background-color: #0000FF;
+        box-shadow: 0px 0px 5px #00FF00;
+    }
+    84%{
+        background-color: #4B0082;
+        box-shadow: 0px 0px 5px #FF7F00;
+    }
+    98%{
+        background-color: #9400D3;
+        box-shadow: 0px 0px 5px #FF0000;
+    }
+}
+.first{
+    margin: 100px 350px;
+    height: 300px;
+    width: 500px;
+    border-radius: 20px;
+    z-index: 3;
+    position: absolute;
+    animation: first 5s infinite;
+}
+.second{
+    margin: 150px 400px;
+    height: 300px;
+    width: 500px;
+    border-radius: 20px;
+    z-index: 2;
+    position: absolute;
+    animation: first 10s infinite;
+}
+.third{
+    margin: 200px 450px;
+    height: 300px;
+    width: 500px;
+    border-radius: 20px;
+    z-index: 1;
+    position: absolute;
+    animation: first 15s infinite;
+}

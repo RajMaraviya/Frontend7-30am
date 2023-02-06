@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* width: 100%; */
+}
+.abc{
+    display: flex;
+}
+.first{
+    margin: 100px 350px;
+    height: 300px;
+    width: 500px;
+    background-color: red;
+    z-index: 3;
+    position: absolute;
+}
+.second{
+    margin: 150px 400px;
+    height: 300px;
+    width: 500px;
+    background-color: green;
+    z-index: 2;
+    position: absolute;
+}
+.third{
+    margin: 200px 450px;
+    height: 300px;
+    width: 500px;
+    background-color: blue; 
+    z-index: 1;
+    position: absolute;
+}

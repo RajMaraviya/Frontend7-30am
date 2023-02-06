@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlipKart</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <title>Sign-up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://malsup.github.io/jquery.cycle.all.js"></script>
     <script>
         $(document).ready(function () {
             $(".popup").click(function () {
-                if ($(".modal").hasClass("active")) {
-                    $(".modal").removeClass("active");
-                }
-                else {
-                    $(".modal").addClass("active");
-                }
-                return false
-            });
+                $(".modal").fadeToggle();
+            })
+
+            $("#close").click(function () {
+                $(".modal").fadeToggle();
+            })
         });
     </script>
     <style>
         @import url(css/style.css);
     </style>
 </head>
+
 <body>
     <header>
         <div class="col-1">
-            <p><i class="fa-solid fa-phone"></i>(+91) 73357217</p>            
+            <p><i class="fa-solid fa-phone"></i>(+91) 73357217</p>
         </div>
         <div class="col-2">
             <input type="search" id="search" name="search" placeholder="Search your products!">
@@ -39,14 +43,16 @@
             <i class="fa-brands fa-google"></i>
             <i class="fa-brands fa-telegram"></i>
             <a href="">cart
-            <i class="fa-solid fa-cart-shopping"></i></a>
+                <i class="fa-solid fa-cart-shopping"></i></a>
             <span>0</span>
         </div>
     </header>
     <nav>
-        <div class="logo"><i class="fa-solid fa-basket-shopping"></i><h4>Shraddha commerce</h4></div>
+        <div class="logo"><i class="fa-solid fa-basket-shopping"></i>
+            <h4>Shraddha commerce</h4>
+        </div>
         <div class="menu">
-           <a href="index.html">home</a></li>
+            <a href="index.html">home</a></li>
             <a href="#">Womens's producs</a>
             <a href="#">Mens's producs</a>
             <a href="#">Kids's producs</a>
@@ -54,9 +60,10 @@
             <a href="#" class="dropdown">Account
                 <ul class="dropdown-list">
                     <li><i class="fa-solid fa-user-plus"></i> &nbsp; Register</li>
-                    <li class="popup"><i class="fa-solid fa-arrow-right-to-bracket"></i> &nbsp;  &nbsp;Login</li>
+                    <li class="popup"><i class="fa-solid fa-arrow-right-to-bracket"></i> &nbsp; &nbsp;Login</li>
                 </ul>
-            <i class="fa fa-caret-down"></i></a>
+                <i class="fa fa-caret-down"></i>
+            </a>
             <a href="#">Contact us</a>
         </div>
     </nav>
@@ -111,7 +118,7 @@
                 </select>
                 <input type="submit" value="Register">
                 <input type="reset" value="Reset"><br>
-                <h4>Already have an account?<a href="" class="popup">Login here</a></h4>
+                <h4>Already have an account?<a href="#" class="popup">Login here</a></h4>
             </div>
         </div>
     </div>
@@ -140,23 +147,30 @@
         </div>
         <div class="col">
             <h2>Our office Address</h2>
-            <h5>Address :7QVR+3RX Jagnath Plot, Rajkot, Gujarat 360001 <br> 
+            <h5>Address :7QVR+3RX Jagnath Plot, Rajkot, Gujarat 360001 <br>
                 <span>Hours: open |</span> close 8PM <br>
-                <span>Suggest an edit | Own this business</span></h5>
+                <span>Suggest an edit | Own this business</span>
+            </h5>
         </div>
     </footer>
     <div class="modal">
         <div class="log-form">
             <div class="l-s">
-                <h2>Login form</h2>
+                <h2>Login form &nbsp;<i class="fa-regular fa-user"></i></h2>
                 <p>Get access to your Orders, <br> Wishlist and <br> Recommendations</p>
                 <img src="images/login-icon.png" alt="login-icon">
             </div>
             <div class="r-s">
-                <input type="email" placeholder="Enter Email *">
-                <input type="password" placeholder="Enter password *">
+                <button id="close">x</button>
+                <div class="center">
+                    <input type="email" placeholder="Enter Email *">
+                    <input type="password" placeholder="Enter password *">
+                    <input type="submit" value="Login"><a href="#">Forgot Password??</a>
+                    <p>Don't have an account? <a href="#">Register here</a></p>
+                </div>
             </div>
-        </div><!--end log form -->
+        </div>
     </div>
 </body>
+
 </html>

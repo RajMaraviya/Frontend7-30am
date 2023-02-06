@@ -1,0 +1,20 @@
+<script>
+
+    /*  let is block scoped.
+        let can be update but not re-declared.
+        let variable are not initialized. */
+
+    var a=10;
+    let b=20;
+    
+    let c=80;
+    {
+        let c=30;
+        console.log(a);
+        console.log(c);
+    }
+    console.log(b);
+    b=35;
+    console.log(b);
+    console.log(c);
+</script>

@@ -10,14 +10,12 @@
     <script>
         $(document).ready(function () {
             $(".popup").click(function () {
-                if ($(".modal").hasClass("active")) {
-                    $(".modal").removeClass("active");
-                }
-                else {
-                    $(".modal").addClass("active");
-                }
-                return false
-            });
+                $(".modal").fadeToggle();
+            })
+
+            $("#close").click(function () {
+                $(".modal").fadeToggle();
+            })
         });
     </script>
     <style>
@@ -101,15 +99,20 @@
     <div class="modal">
         <div class="log-form">
             <div class="l-s">
-                <h2>Login form</h2>
+                <h2>Login form &nbsp;<i class="fa-regular fa-user"></i></h2>
                 <p>Get access to your Orders, <br> Wishlist and <br> Recommendations</p>
                 <img src="images/login-icon.png" alt="login-icon">
             </div>
             <div class="r-s">
-                <input type="email" placeholder="Enter Email *">
-                <input type="password" placeholder="Enter password *">
+                <button id="close">x</button>
+                <div class="center">
+                    <input type="email" placeholder="Enter Email *">
+                    <input type="password" placeholder="Enter password *">
+                    <input type="submit" value="Login"><a href="#">Forgot Password??</a>
+                    <p>Don't have an account? <a href="#">Register here</a></p>
+                </div>
             </div>
-        </div><!--end log form -->
+        </div>
     </div>
 </body>
 </html>
