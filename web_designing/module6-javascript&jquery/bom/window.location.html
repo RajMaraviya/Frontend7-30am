@@ -1,0 +1,16 @@
+<script>
+    function test()
+    {
+        if(confirm('are you sure to LogOut?')) // "confirm" is window object
+        {
+            alert('You are LogOut successfully')
+            window.location='https://www.flipkart.com';
+       } 
+       else 
+       {
+        window.location='window.location.html';
+       }
+    }
+</script>
+
+<button type="button" onclick="test()">Logout here!</button>
