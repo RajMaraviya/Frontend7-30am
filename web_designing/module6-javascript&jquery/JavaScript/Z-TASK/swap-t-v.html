@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Swapping two numbers</title>
+</head>
+
+<body>
+    <h1>Swapping two numbers without using a third variable</h1>
+    <p>First number: <input type="text" id="a"></p>
+    <p>Second number: <input type="text" id="b"></p>
+    <button id="Btn" onclick="test()">Swap</button>
+    <p id="aa"></p>
+    <p id="bb"></p>
+
+    <script>
+        function test(){
+            var a = document.getElementById('a').value;
+            var b = document.getElementById('b').value;
+            var temp = a;
+            a = b;
+            // console.log("a is "+a);
+            // console.log("b is "+b);
+
+            document.getElementById('aa').innerHTML="result of a :"+a;
+            document.getElementById('bb').innerHTML="result of b :"+b;
+        }
+    </script>
+</body>
+
+</html>

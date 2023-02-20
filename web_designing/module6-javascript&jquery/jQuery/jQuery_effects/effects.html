@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#del-btn").click(function(){
+                $("#crt").remove();
+            })
+
+        //Effects
+            $("#hide-crt").click(function(){
+                $("#cart").hide(500); //it can set hiding speed
+            });
+
+            $("#show-crt").click(function(){
+                $("#cart").show(500); //it can set showing speed
+            });
+
+            $("#toggle-crt").click(function(){
+                $("#cart").toggle(500); //it can set hiding/showing speed
+            });
+        })
+    </script>
+    <script>
+        function carttotal() {
+            var p = document.getElementById("offer-price").value;
+            var q = document.getElementById("qty").value;
+            var t = p * q;
+            document.getElementById("tot").innerHTML = t;
+        }
+    </script>
+</head>
+
+<body
+    style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+
+    <div id="cart">
+        <table align="center" width="80%">
+            <tr>
+                <th>Product id</th>
+                <th>Image</th>
+                <th>Product name</th>
+                <th>Price</th>
+                <th>OfferPrice</th>
+                <th>Select Oty</th>
+                <th>Action</th>
+            </tr>
+            <tr align="center"  id="crt">
+                <td>1001</td>
+                <td><img src="../jQuery_delete/motorola-edge-30-fusion.png" style="width: 100px; height: auto;"></td>
+                <td>Motorola Edge30</td>
+                <td>Rs. 30,000-/</td>
+                <td>Rs. <input type="text" value="27999" id="offer-price"
+                        style="border:none; width: 45px; font-size: 15px;"> -/</td>
+                <td><input type="number" min="1" max="9" value="1" id="qty" onchange="carttotal()"></td>
+                <td> <a href="#"><button type="button" id="del-btn">Delete</button></a></td>
+            </tr>
+            <tr>
+                <td colspan="7" style="color: darkgrey;">
+                    <h4 align="right">Sub totals of Products is : Rs. <span id="tot">27999</span>-/</h4>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <button id="hide-crt">hide</button>
+    <button id="show-crt">show</button>
+    <button id="toggle-crt">toggle</button>
+</body>
+
+</html>

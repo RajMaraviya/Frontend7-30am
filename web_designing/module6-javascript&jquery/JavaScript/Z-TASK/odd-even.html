@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function test()
+        {
+            var a = document.getElementById('a').value;
+            if(a%2 == 0)
+            {
+                document.getElementById('output').innerHTML="number is even";
+                // console.log('even');
+            }
+            else{
+                document.getElementById('output').innerHTML="number is odd";
+                // console.log('odd');
+            }
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <input type="text" name="a" id="a" placeholder="Value a"><br><br>
+        <button type="button" onclick="test()">Check</button>
+        <p id="output"></p>
+    </div>
+</body>
+</html>

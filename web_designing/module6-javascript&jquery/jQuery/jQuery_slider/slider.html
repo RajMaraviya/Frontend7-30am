@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://malsup.github.io/jquery.cycle.all.js"></script>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #navbar{
+            width: 100%;
+            height: 40px;
+            background-color: black;
+            color: white;
+            margin: auto;
+            padding: 8px;
+        }
+        #navbar h1{
+            padding: 0;
+            margin: 0;
+        }
+        #navbar a{
+            margin: auto;
+            float: right;
+            color: white;
+            text-decoration: none;
+            list-style: none;
+        }
+        #login{
+            position: absolute;
+            top: 13%;
+            left: 25%;
+            z-index: 99;
+            display: none;
+            width: 50%;
+            height: 200px;
+            border-radius: 5px;
+            background-color: #ff80009d;
+            color: white;
+            margin: auto;
+            padding: 15px;
+        }
+        #slider{
+            width: 95%;
+            margin: 2% auto;
+            height: auto;
+            
+        }
+        #slider img{
+            width: 100%;
+            height: 500px;
+        }
+        #gallary{
+            margin: auto;
+            padding: 0;
+            width: 95%;
+            height: auto;
+            background-color: #3ba3f3;
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+        }
+        #gallary1{
+            width: 100%;
+            height: auto;
+            padding: 0;
+        }
+        #gallary2{
+            width: 100%;
+            height: auto;
+            padding: 0;
+        }
+        #gallary1 img, #gallary2 img{
+            width: 100%;
+            height: auto;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+
+            $("#navbar h1").click(function(){
+                $("#login").fadeToggle(1000); //1000ms time, slow, fast
+            });
+
+            // $("#slider").cycle("fade");
+            $("#slider").cycle({
+                fx: "fade" //effects: fade, shuffle, zoom, turnUp, turnRight, turnLeft, turnDown,, blindY,blindX,fadeZoom,blindZ,growX,curtainX,cover,uncover,toss,wipe,
+            });
+
+            $(".gall1").cycle("fade");
+            $(".gall2").cycle("fade");
+            
+        })
+    </script>
+</head>
+
+<body>
+    
+        <div id="navbar">
+            <h1><a href="#">login here</a></h1>
+        </div>
+        <div id="slider">
+            <img src="https://images.pexels.com/photos/1287145/pexels-photo-1287145.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+            <img src="https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+            <img src="https://images.pexels.com/photos/5359974/pexels-photo-5359974.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+        </div>
+        
+        <div id="login">
+            <h3>login form</h3>
+            <hr>
+            <input type="text" name="" id="" placeholder="Name"><br><br>
+            <input type="password" name="" id="" placeholder="password"><br><br>
+            <button type="submit">submit</button>
+        </div>
+
+        <div id="gallary">
+            <div id="gallary1" class="gall1">
+                <img src="images/front-left.webp" alt="1">
+                <img src="images/front-right.webp" alt="2">
+                <img src="images/back-left.webp" alt="3">
+                <img src="images/back-right.webp" alt="4">
+            </div>
+            <div id="gallary2" class="gall2">
+                <img src="images/front-right.webp" alt="2">
+                <img src="images/back-left.webp" alt="3">
+                <img src="images/back-right.webp" alt="4">
+                <img src="images/front-left.webp" alt="1">
+            </div>
+            <div id="gallary1" class="gall1">
+                <img src="images/back-left.webp" alt="3">
+                <img src="images/back-right.webp" alt="4">
+                <img src="images/front-left.webp" alt="1">
+                <img src="images/front-right.webp" alt="2">
+            </div>
+            <div id="gallary2" class="gall2">
+                <img src="images/back-right.webp" alt="4">
+                <img src="images/front-left.webp" alt="1">
+                <img src="images/front-right.webp" alt="2">
+                <img src="images/back-left.webp" alt="3">
+            </div>
+        </div>
+    
+</body>
+
+</html>

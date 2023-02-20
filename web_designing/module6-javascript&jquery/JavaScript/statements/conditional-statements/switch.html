@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function test() {
+            var grade = document.getElementById("aaa").value;
+            switch(grade)
+            {
+                case 'a': 
+                document.getElementById('result').innerHTML="first class of students list";
+                break;
+
+                case 'b':
+                document.getElementById('result').innerHTML="second class of students list";
+                break;
+
+                case 'c':
+                document.getElementById('result').innerHTML="fail students list";
+                break;
+
+                default:
+                document.getElementById('result').innerHTML="Please enter grade in 'a,b,c' formate otherwise contact with admin";
+                break;
+            }   
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="aaa" placeholder="enter nuber a"><br><br>
+    <button type="button" onclick="test()">check</button>
+    <p id="result"></p>
+</body>
+</html>

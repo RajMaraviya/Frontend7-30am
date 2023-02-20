@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+       #loader{
+        width: 30%;
+        height: 300px;
+        margin: 12% auto;
+        background-image: url(loader.gif);
+        background-repeat: no-repeat;
+        background-size: 350px auto;
+       }
+    </style>
+</head>
+
+<body onload="test()">
+    <div id="loader"></div>
+    <div id="mainPage">
+        <p>welcome to our page</p>
+    </div>
+
+    <script>
+        var a;
+        function test(){
+            a=setTimeout("load()",2000);
+        }
+        function load(){
+            document.getElementById("loader").style="display:none";
+            document.getElementById("mainPage").style="display:block";
+        }
+    </script>
+</body>
+
+</html>
