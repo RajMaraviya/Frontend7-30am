@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/orange.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="js/jquery.bvalidator.min.js"></script>
+    <script src="js/default.min.js"></script>
+    <script src="js/orange.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#frm').bValidator();
+        })
+    </script>
+</head>
+
+<body>
+    <center>
+        <h1>Register Now </h1>
+        <form method="post" id="frm" action="welcome.html">
+
+            <input type="text" name="name" placeholder="Name *" data-bvalidator="required,alpha">
+            <br><br>
+            <input type="text" name="email" placeholder="Email *" data-bvalidator="required,email">
+            <br><br>
+            <input type="password" name="pass" placeholder="Password *" data-bvalidator="required,minlen[4],maxlen[10]"
+                pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
+            <br><br>
+            Male<input type="radio" name="gender" value="male" placeholder="Name *">
+            Female<input type="radio" name="gender" value="female" placeholder="Name *">
+
+            <br><br>
+            <textarea name="address" placeholder="Address *" data-bvalidator="required"></textarea>
+            <br><br>
+
+            <input type="submit" name="sub" value="Register">
+        </form>
+    </center>
+</body>
+
+</html>
