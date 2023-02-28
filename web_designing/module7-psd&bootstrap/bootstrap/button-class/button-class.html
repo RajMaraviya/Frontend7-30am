@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <!-- icon cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            box-sizing: border-box;
+            background-color: lightgray !important;
+        }
+
+        .img-gallary {
+            width: 90% !important;
+            height: 400px !important;
+            display: flex;
+
+        }
+        .imgs{
+            width: 25%;
+            height: auto;
+        }
+        .imgs img {
+            width: 100%;
+            height: 300px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1 class="text-center">images in bootstrap</h1>
+    <hr class="border border-1 border-dark w-25 mx-auto">
+    <div class="img-gallary mx-auto">
+        <div class="imgs">
+            <img src="https://images.pexels.com/photos/7974/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=800" alt=""><br><br>
+            <button type="button" class="btn btn-sm btn-dark w-100 btn-outline-warning">add to cart</button>
+        </div>
+        <div class="imgs">
+            <img src="https://images.pexels.com/photos/2047905/pexels-photo-2047905.jpeg?auto=compress&cs=tinysrgb&w=800" alt=""><br><br>
+            <button type="button" class="btn btn-md btn-primary w-100 btn-outline-danger">add to cart</button>
+        </div>
+        <div class="imgs">
+            <img src="https://images.pexels.com/photos/303383/pexels-photo-303383.jpeg?auto=compress&cs=tinysrgb&w=800" alt=""><br><br>
+            <button type="button" class="btn btn-lg w-100 btn-outline-dark">add to cart</button>
+        </div>
+        <div class="imgs">
+            <img src="https://images.pexels.com/photos/2047905/pexels-photo-2047905.jpeg?auto=compress&cs=tinysrgb&w=800" alt=""><br><br>
+            <button type="button" class="btn btn-sm btn-warning w-100 btn-outline-dark">add to cart</button>
+        </div>
+    </div>
+</body>
+
+</html>

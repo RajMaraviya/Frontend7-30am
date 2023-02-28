@@ -1,0 +1,11 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    
+}
+.txts{
+    color: orangered !important;
+    font-weight: 300;
+}

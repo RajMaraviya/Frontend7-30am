@@ -1,0 +1,16 @@
+@media only screen and (min-width:320px) and (max-width:480px) 
+{
+    .main
+    {
+        /* width: 100%; */
+    }
+    .txt{
+        font-size: 20px !important;
+    }
+    .address{
+        padding: 20px !important;
+        font-weight: 400;
+        width: 90% !important;
+        height: auto;
+    }
+}
