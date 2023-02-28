@@ -20,56 +20,80 @@
             background: url('images/login-bg.png') no-repeat;
             background-size: cover;
         }
-        .nav {
+        .navbar{
+            width: 100%;
+            height: auto;
             background-color: #ecf5fb;
             position: sticky;
             top: 0;
         }
-        nav a{
-            width: 27%;
-            margin: auto;
+
+        .navbar-brand img {
+            width: 70%;
+            height: auto;
+            margin-left: 15%;
         }
-        nav img{
-            width: 100%;
-        }
-        .login{
+
+        .login {
             width: 30%;
             height: auto;
             background-color: #edf5fb;
             border-radius: 15px;
             border: 2px solid #4c92be;
         }
-        .frg{
+
+        .frg {
             text-decoration: none;
         }
-        .modal-content{
+
+        .modal-content {
             border: 0px;
         }
-        .w-2{
+
+        .w-2 {
             width: 30px;
             height: 30px;
         }
-        .btn{
+
+        .btn {
             background: linear-gradient(273.57deg, #2E3192 1.14%, #4C92BE 100%);
         }
-        @media only screen and (min-width:320px) and (max-width:480px)
-        {
-            body{
+
+        .navbar-link li {
+            display: inline-block;
+            padding: 2px 20px;
+        }
+
+        .navbar-link a {
+            font-size: 17px;
+            text-decoration: none;
+            list-style: none;
+            color: black;
+        }
+        .dropdown:hover .dropdown-menu{
+            display: block;
+        }
+        @media only screen and (min-width:320px) and (max-width:480px) {
+            body {
                 overflow-x: hidden;
                 box-sizing: border-box;
             }
-            .navbar{
+
+            .navbar {
                 width: 100%;
             }
-            .login{
+
+            .login {
                 width: 90%;
                 height: auto;
             }
-            nav a{
+
+            nav a {
                 width: 90%;
                 margin: auto;
             }
-            nav img{
+
+            nav img {
                 width: 90%;
                 height: auto;
             }
@@ -79,8 +103,25 @@
 
 <body>
     <nav class="nav navbar">
-        <a href=""><img src="images/TOPS-logo.png" alt="" class="mx-auto"></a>
+        <a href="#" class="navbar-brand"><img src="images/TOPS-logo.png" alt=""></a>
+
+        <!-- navigation bar -->
+            <ul class="navbar-link">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Attendance</a></li>
+                <li class="dropdown"><a class="dropdown-toggle" data-bs-toggle="dropdown" href="#">Assignment</a>
+                    <ul class="dropdown-menu">
+                        <li>Projects</li>
+                        <li>Assignment</li>
+                        <li>Assessments</li>
+                        <li>Lecture flow</li>
+                    </ul>
+                </li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Account</a></li>
+            </ul>
     </nav>
+    <!--  -->
     <div class="login container mt-5 p-3  shadow-lg">
         <h3 class="text-center text-info mt-3">TOPS</h3>
         <h3 class="text-center">CareerCenter Login</h3>
@@ -88,19 +129,19 @@
             <div class="input-group w-75 mt-3 mx-auto">
                 <label>Mobile *</label>
             </div>
-            <div class="input-group w-75 mt-3 mx-auto">                
+            <div class="input-group w-75 mt-3 mx-auto">
                 <input type="text" name="Mobile" placeholder="Enter Mobile" class="form-control">
             </div>
             <div class="input-group w-75 mt-3 mx-auto">
                 <label>Password *</label>
             </div>
-            <div class="input-group w-75 mt-3 mx-auto">                
+            <div class="input-group w-75 mt-3 mx-auto">
                 <input type="password" name="password" placeholder="Enter password" class="form-control">
             </div>
-            <div class="input-group w-75 mt-3 mx-auto">                
+            <div class="input-group w-75 mt-3 mx-auto">
                 <b><a href="#" data-bs-toggle="modal" data-bs-target="#reg" class="frg">Forgot Password?</a></b>
             </div>
-            <div class="input-group w-75 mt-3 mx-auto">                
+            <div class="input-group w-75 mt-3 mx-auto">
                 <button type="button" value="logi" class="btn w-100 btn-info mb-4">login</button>
             </div>
         </form>
@@ -109,7 +150,7 @@
     <!-- register model here -->
     <div class="modal fade" id="reg">
         <div class="modal-dialog">
-            
+
             <div class="modal-content bg-transparent">
                 <div class="login w-100 container mt-5 p-3">
                     <button class="btn btn-sm w-2 btn-danger float-end" data-bs-dismiss="modal">x</button>
@@ -122,33 +163,35 @@
                         <div class="input-group mt-2 w-75 mx-auto">
                             <input type="text" name="mobile" placeholder="Mobile" class="form-control" required>
                         </div>
-                
+
                         <div class="input-group mt-2 w-75 mx-auto">
                             <label>Password *</label>
                         </div>
                         <div class="input-group mt-2 w-75 mx-auto">
                             <input type="password" name="password" placeholder="Password" class="form-control" required>
                         </div>
-                
+
                         <div class="input-group mt-2 w-75 mx-auto">
                             <label>Confirm Password *</label>
                         </div>
                         <div class="input-group mt-2 w-75 mx-auto">
-                            <input type="password" name="cpassword" placeholder="Confirm Password" class="form-control" required>
+                            <input type="password" name="cpassword" placeholder="Confirm Password" class="form-control"
+                                required>
                         </div>
-                
+
                         <div class="input-group mt-2 w-75 mx-auto">
                             <label>Phone *</label>
                         </div>
                         <div class="input-group mt-2 w-75 mx-auto">
                             <input type="text" name="phone" placeholder="Phone" class="form-control" required>
                         </div>
-                
+
                         <div class="input-group mt-3 w-75 mx-auto">
-                            <input type="submit" name="register" value="SignUp" class="btn btn-md btn-info text-white w-100">
+                            <input type="submit" name="register" value="SignUp"
+                                class="btn btn-md btn-info text-white w-100">
                         </div>
-                
-                
+
+
                         <div class="input-group ms-5 mt-3  mx-auto">
                             <b>Already have an Account?</b>&nbsp;<a href="#">Login</a>
                         </div>

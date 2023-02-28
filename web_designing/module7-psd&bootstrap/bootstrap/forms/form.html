@@ -22,6 +22,8 @@
         }
         .nav {
             background-color: #ecf5fb;
+            position: sticky;
+            top: 0;
         }
         .login{
             width: 35%;
@@ -30,17 +32,46 @@
             border-radius: 12px;
             border: 2px solid #4c92be;
         }
+        .frg{
+            text-decoration: none;
+        }
+        @media only screen and (min-width:320px) and (max-width:480px)
+        {
+            .login{
+                width: 90%;
+                height: auto;
+            }
+        }
     </style>
 </head>
 
 <body>
     <nav class="nav navbar">
-        <a href=""><img src="images/TOPS-logo.png" alt=""></a>
+        <!-- <a href=""><img src="images/TOPS-logo.png" alt=""></a> -->
     </nav>
-    <div class="login container mt-5">
-        <h1 class="text-center text-info">TOPS</h1>
-        <h5 class="text-center">CareerCenter Login</h5>
-        <form action=""></form>
+    <div class="login container mt-5 p-3">
+        <h3 class="text-center text-info">TOPS</h3>
+        <h3 class="text-center">CareerCenter Login</h3>
+        <form action="" method="post">
+            <div class="input-group w-75 mt-2 mx-auto">
+                <label>Mobile *</label>
+            </div>
+            <div class="input-group w-75 mt-2 mx-auto">                
+                <input type="text" name="Mobile" placeholder="Enter Mobile" class="form-control">
+            </div>
+            <div class="input-group w-75 mt-2 mx-auto">
+                <label>Password *</label>
+            </div>
+            <div class="input-group w-75 mt-2 mx-auto">                
+                <input type="password" name="password" placeholder="Enter password" class="form-control">
+            </div>
+            <div class="input-group w-75 mt-2 mx-auto">                
+                <b><a href="#" class="frg">Forgot Password?</a></b>
+            </div>
+            <div class="input-group w-75 mt-2 mx-auto">                
+                <button type="button" value="logi" class="btn w-100 btn-info">login</button>
+            </div>
+        </form>
     </div>
 
 </body>
