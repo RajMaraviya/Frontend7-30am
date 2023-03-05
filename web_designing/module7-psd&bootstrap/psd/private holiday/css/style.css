@@ -1,0 +1,166 @@
+@font-face
+{
+    font-family: lust-script;
+    src: url(../fonts/Lust-Script.ttf);
+}
+@font-face {
+    font-family: proE;
+    src: url(../fonts/Proxima\ Nova\ Extrabold.otf);
+}
+@font-face {
+    font-family: proR;
+    src: url(../fonts/ProximaNova-Regular.otf);
+}
+@font-face {
+    font-family: proB;
+    src: url(../fonts/Proxima\ Nova\ Alt\ Bold.otf);
+}
+@font-face {
+    font-family: kepler;
+    src: url(../fonts/KeplerStd-BoldScnDisp.otf);
+}
+
+body{
+    /* font-family: lust-script; */
+    font-family: proximaR;
+    overflow-x: hidden;
+    background-color: #ecf0f1;
+
+}
+.navigation{
+    height: auto;
+    text-align: center;
+    font-size: 16px;
+    
+}
+
+.navigation a{
+    font-family: proR;
+    color: black;
+    text-decoration: none;
+}
+.navigation .logo a{
+    font-family: lust-script;
+    font-size: 36px;
+}
+.navbar-icon{
+    display: none;
+}
+.slider{
+    height: 600px;
+    overflow-x: hidden;
+    padding: 0 !important;
+    background-image: url(../images/slider.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: black;
+}
+.slider .silder-content{
+    position: sticky;
+    top: 35%;
+    color: white;
+}
+.silder-content h1{
+    width: fit-content;
+    font-family: proE;
+    font-size: 50px;
+    color: #ffffff;
+}
+.booking{
+    margin-top: -4%;
+}
+.rectangle{
+    position: sticky;
+    height: 100px;
+    top: 100%;
+    left: 13%;
+}
+.rectangle .inputs{
+    width: 85%;
+    margin-top: 4%;
+}
+.rectangle button{
+    width: auto;
+    height: auto;
+}
+.rectangle .bdr{
+    border: none;
+    border-bottom: 1px solid red;
+    border-radius: 0 !important;
+    font-family: proR;
+    appearance: button !important;
+}
+.image-slider {
+    font-family: kepler;
+    letter-spacing: 2px;
+}
+.image-slider p i{
+    font-size: 7px;
+}
+.image-slider p i:nth-child(3){
+    font-size: 10px;
+}
+
+
+
+
+
+
+
+
+
+@media only  screen and  (min-width:320px) and (max-width:480px)
+{
+    .menu{
+        display: none;
+    }
+    .logo{
+        float: left !important;
+        width: 85% !important;
+    }
+    .navbar-icon{
+        display: block;
+        width: fit-content;
+        border: transparent;
+        background-color: transparent;
+        font-size: 25px;
+    }
+    .logo{
+        width: fit-content;
+        float: left;
+    }
+    .logo a{
+        float: left;
+        font-size: 30px !important;
+    }
+    .slider{
+        height: 400px;
+    }
+    .silder-content h1{
+        font-size: 28px;
+    }
+    .rectangle{
+        width: fit-content !important;
+        height: auto;
+    }
+    .rectangle .inputs .mx-3{
+        margin:10px 0px 10px 0px;
+    }
+    .booking{
+        margin-top: -14%;
+    }
+    
+    .image-slider iframe{
+        width: 100%;
+    }
+    
+}
+@media only screen and (min-width:481px) and (max-width:768px) 
+{
+    
+}
+@media only screen and (min-width:769px) and (max-width:1024px) 
+{
+    
+}
