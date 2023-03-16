@@ -14,10 +14,9 @@
       margin: 0;
       padding: 0;
     }
-
-    * {
-      /* box-sizing: border-box; */
-      /* overflow-x: hidden; */
+    @font-face {
+      font-family: kepler;
+      src: url(../fonts/KeplerStd-BoldScnDisp.otf);
     }
 
     html,
@@ -30,14 +29,14 @@
       color: #fff;
     }
     .container {
-      margin: 10px auto;
+      margin: 0px auto;
       min-width: 80%;
       max-width: 90%;
     }
 
     .slider {
       width: 100%;
-      margin: 50px auto;
+      margin: 20px auto;
     }
 
     .slick-slide {
@@ -45,7 +44,7 @@
     }
 
     .slick-slide img {
-      width: 300px;
+      width: 285px;
       height: 185px;
     }
 
@@ -79,6 +78,31 @@
     .download:hover {
         color: #fff
     }
+    .img-tag{
+      width: 285px;
+      height: 70px;
+      text-align: center;
+      font-family: kepler;
+      position: absolute;
+      color: black;
+      top: 87px;
+    }
+    .img-tag div{
+      padding-top: 10px !important;
+      width: 75%;
+      margin: 0;
+      padding: 0;
+      height: 60px;
+      background-color: #fff;
+    }
+    .img-tag h1{
+      font-weight: 500;
+      margin-top: 0px !important;
+      width: fit-content;
+      padding: 10px 20px;
+      border: 1px solid #cccccc;
+      font-size: 18px;
+    }
 
     @media only screen and (min-width:320px) and (max-width:480px) {
       .container{
@@ -94,14 +118,35 @@
 
 <body>
   <div class="container">
-    <section class="variable slider">
-      <div>
+    <section class="variable">
+      <div id="cauresal-img1">
+        <div class="img-tag">
+          <center>
+            <div>
+              <h1>Beachfront Escapes</h1>
+            </div>
+          </center>
+        </div>
         <img src="../images/slider-img-1.png">
       </div>
-      <div>
+      <div id="cauresal-img2">
+        <div class="img-tag">
+          <center>
+            <div>
+              <h1>Beachfront Escapes</h1>
+            </div>
+          </center>
+        </div>
         <img src="../images/slider-img-2.png">
       </div>
-      <div>
+      <div id="cauresal-img3">
+        <div class="img-tag">
+          <center>
+            <div>
+              <h1>Beachfront Escapes</h1>
+            </div>
+          </center>
+        </div>
         <img src="../images/slider-img-3.png">
       </div>
     </section>

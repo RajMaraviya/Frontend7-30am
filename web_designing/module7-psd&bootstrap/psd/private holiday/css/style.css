@@ -21,7 +21,7 @@
 }
 
 body{
-    /* font-family: lust-script; */
+    border: 2px double #535353;
     font-family: proximaR;
     overflow-x: hidden;
     background-color: #ecf0f1;
@@ -31,7 +31,7 @@ body{
     height: auto;
     text-align: center;
     font-size: 16px;
-    
+    background-color: #ffffff;
 }
 
 .navigation a{
@@ -45,6 +45,28 @@ body{
 }
 .navbar-icon{
     display: none;
+}
+footer{
+    padding: 15px;
+    height: auto;
+    background-color: #171d1c;
+    font-family: proR;
+    font-size: 14px;
+}
+footer a{
+    text-decoration: none;
+    color: #dbdbdb;
+    font-size: 12px;
+}
+footer span{
+    font-weight: bolder;
+}
+.owner{
+    text-align: right;
+}
+.owner p{
+    font-size: 12px;
+    color: #dbdbdb;
 }
 .slider{
     height: 600px;
@@ -72,7 +94,7 @@ body{
 }
 .rectangle{
     position: sticky;
-    height: 100px;
+    height: auto;
     top: 100%;
     left: 13%;
 }
@@ -81,27 +103,122 @@ body{
     margin-top: 4%;
 }
 .rectangle button{
-    width: auto;
-    height: auto;
+    margin: 20px 10px;
+    width: 50px;
+    height: 40px;
 }
 .rectangle .bdr{
     border: none;
     border-bottom: 1px solid red;
-    border-radius: 0 !important;
+    border-radius: 5px 5px 0px 0px !important;
     font-family: proR;
     appearance: button !important;
+    background-color: transparent;
+    font-size: 12px;
+    
+}
+.rectangle .bdr:hover{
+    box-shadow: 0px 0px 5px #000;
 }
 .image-slider {
     font-family: kepler;
     letter-spacing: 2px;
 }
-.image-slider p i{
+p i{
     font-size: 7px;
 }
-.image-slider p i:nth-child(3){
+p i:nth-child(3){
     font-size: 10px;
 }
-
+.thalie{
+    background-color: #ffffff;
+}
+.thalie .w-25{
+    width: 23.89% !important;
+}
+.img-h{
+    height: 160px;
+}
+.location-content h5{
+    font-size: 20px;
+    margin: 8px 0px;
+    font-family: kepler;
+}
+.location-content{
+    font-family: proR;
+}
+.location-content p{
+    font-size: 13px;
+    line-height: 20px;
+    opacity: 0.8;
+}
+.location-content span i{
+    font-size: 16px;
+    letter-spacing: 5px;
+}
+.location-content span{
+    opacity: 0.9;
+    letter-spacing: 25px;
+}
+.location-content span img{
+    width: 21px;
+}
+.why-circle{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-image: url(../images/dark_polygon.png);
+    background-position: center;
+    background-size: cover;
+}
+.why-circle img{
+    width: 35px;
+    margin-top: 25px;
+}
+.why-circle ~ h4{
+    font-weight: 800;
+}
+.why-circle ~ p{
+    width: 78%;
+    font-family: proR;
+    font-size: 13px;
+    text-align: center;
+}
+.send-msg{
+    height: 570px;
+    background-image: url(../images/message-bg.png);
+    background-position: center;
+    background-size: cover;
+}
+.msg-row{
+    width: 98%;
+    margin: auto;
+    position: relative;
+    top: 297px;
+}
+.msg-box{
+    background-color: #ffffff;
+    font-family: proR;
+}
+.msg-box h3{
+    font-family: kepler;
+    font-weight: 600;
+}
+.msg-box input{
+    margin: auto;
+    width: 85%;
+    border: 0;
+    border-bottom: 1px solid #00000038;
+    border-radius: 0;
+    box-shadow: none;
+}
+.msg-box button{
+    margin: 60px 0px 20px 25px;
+    background-color: #f31131;
+    color: #ffffff;
+    padding: 5px 20px;
+    font-size: 12px;
+}
 
 
 
@@ -133,34 +250,117 @@ body{
     .logo a{
         float: left;
         font-size: 30px !important;
+        margin-left: 15px !important;
     }
     .slider{
         height: 400px;
     }
     .silder-content h1{
-        font-size: 28px;
+        font-size: 4vh;
     }
     .rectangle{
         width: fit-content !important;
         height: auto;
     }
+    .rectangle button{
+        margin: 25px 10px;
+        width: 50px;
+        height: 40px;
+    }
     .rectangle .inputs .mx-3{
         margin:10px 0px 10px 0px;
     }
     .booking{
-        margin-top: -14%;
+        margin-top: -8%;
     }
     
     .image-slider iframe{
         width: 100%;
     }
+    .thalie .w-25{
+        width: 24.29% !important;
+    }
+    .thalie .w-25{
+        width: 24% !important;
+    }
+
+    .owner{
+        text-align: center;
+        margin-top: 15px;
+    }
     
 }
 @media only screen and (min-width:481px) and (max-width:768px) 
 {
+    .menu{
+        display: none;
+    }
+    .logo{
+        float: left !important;
+        width: 85% !important;
+    }
+    .navbar-icon{
+        display: block;
+        width: fit-content;
+        border: transparent;
+        background-color: transparent;
+        font-size: 25px;
+    }
+    .logo{
+        width: fit-content;
+        float: left;
+    }
+    .logo a{
+        float: left;
+        font-size: 35px !important;
+        margin-left: 20px !important;
+    }
+    .slider{
+        height: 400px;
+    }
+    .silder-content h1{
+        font-size: 5vh;
+    }
+    
+    .rectangle{
+        width: fit-content !important;
+        height: auto;
+    }
+    .rectangle button{
+        margin: 25px 10px;
+        width: 50px;
+        height: 40px;
+    }
+    .rectangle .inputs .mx-3{
+        margin:10px 0px 10px 0px;
+    }
+    .booking{
+        margin-top: -10% !important;
+    }
     
 }
 @media only screen and (min-width:769px) and (max-width:1024px) 
 {
+    .slider{
+        height: 400px;
+    }
+    .silder-content h1{
+        font-size: 34px;
+    }
     
+    .rectangle{
+        width: 85% !important;
+        height: auto;
+    }
+    .rectangle button{
+        margin: 25px 10px;
+        width: 50px;
+        height: 40px;
+    }
+    .rectangle .inputs .mx-3{
+        margin:10px 0px 10px 0px;
+    }
+    .booking{
+        margin-top: -6% !important;
+    }
 }

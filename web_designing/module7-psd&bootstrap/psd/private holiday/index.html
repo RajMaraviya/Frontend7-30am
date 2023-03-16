@@ -10,6 +10,8 @@
 
     <!-- bootstrap icons cdn -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- bootstrap js cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
@@ -22,21 +24,21 @@
     <nav class="navigation shadow">
         <!-- for windows screen -->
         <div class="row py-2 nav">
-            <div class="col-md-2 py-2 menu"><a href="">HOME</a></div>
-            <div class="col-md-2 py-2 menu"><a href="">EXPERIENCES</a></div>
-            <div class="col-md-4 logo px-2"><a href="" class="ms-2">Private Holidays</a></div>
-            <div class="col-md-2 py-2 menu"><a href="">QUESTION</a></div>
-            <div class="col-md-2 py-2 menu"><a href="">CONTACT</a></div>
+            <div class="col-md-2 py-3 menu"><a href="#">HOME</a></div>
+            <div class="col-md-2 py-3 menu"><a href="#">EXPERIENCES</a></div>
+            <div class="col-md-4 logo px-2"><a href="#" class="ms-2">Private Holidays</a></div>
+            <div class="col-md-2 py-3 menu"><a href="#">QUESTION</a></div>
+            <div class="col-md-2 py-3 menu"><a href="#">CONTACT</a></div>
             <button type="button" class="navbar-icon px-2" data-bs-toggle="collapse" data-bs-target="#btn-togg">
                 <span class="bi bi-list"></span>
             </button>
         </div>
         <!-- for mobile screen -->
         <div class="row collapse py-2"  id="btn-togg">
-                <div class="col-12 py-2"><a href="">HOME</a></div>
-                <div class="col-12 py-2"><a href="">EXPERIENCES</a></div>
-                <div class="col-12 py-2"><a href="">QUESTION</a></div>
-                <div class="col-12 py-2"><a href="">CONTACT</a></div>
+                <div class="col-12 py-2"><a href="#">HOME</a></div>
+                <div class="col-12 py-2"><a href="#">EXPERIENCES</a></div>
+                <div class="col-12 py-2"><a href="#">QUESTION</a></div>
+                <div class="col-12 py-2"><a href="#">CONTACT</a></div>
         </div>
     </nav>
     <!-- slider -->
@@ -44,16 +46,17 @@
         <div class="container-fluid silder-content">
             <div class="row p-0 ">
                 <div class="col-md-3 col-sm-3 p-0"></div>
-                <div class="col-md-6 col-sm-6 p-0"><h1 class=" mx-auto">ENJOY FREEDOM LAND</h1></div>
+                <div class="col-md-6 col-sm-6 p-0"><h1 class="mx-auto">ENJOY FREEDOM LAND</h1></div>
                 <div class="col-md-3 col-sm-3 p-0"></div>
             </div>
         </div>
     </div>
+    <!-- booking content -->
     <div class="container bg-transparent booking">
         <div class="rectangle w-75 mx-auto bg-white">
             <form action="#" class="d-flex">
-                <div class="input-group inputs mx-3">
-                    <select name="location" id="" class="form-control w-25 mx-3 bdr">
+                <div class="input-group inputs mx-3 my-5">
+                    <select name="location" id=""class="w-25 mx-3 bdr">
                         <option value="0">Mauritius</option>
                         <option value="1">Costa rica</option>
                         <option value="2">Denvar</option>
@@ -61,27 +64,24 @@
                         <option value="4">berlin</option>
                         <option value="5">frankfurt</option>
                     </select>
-                    <select type="date" class="form-control w-25 mx-3 bdr">
+                    <select type="date" class="w-25 mx-3 bdr">
                         <option value="0">24-sept-2023</option>
                         <option value="0">26-sept-2023</option>
                         <option value="0">28-sept-2023</option>
                     </select>
-                    <select type="date" class="form-control w-25 mx-3 bdr">
+                    <select type="date" class="w-25 mx-3 bdr">
                         <option value="0">24-sept-2023</option>
                         <option value="0">26-sept-2023</option>
                         <option value="0">28-sept-2023</option>
                     </select>
                 </div>
-                <div class="button mt-4 me-3 pt-2">
                     <button type="button" class="btn bg-danger rounded-pill">
                         <i class="bi bi-arrow-right text-white"></i>
-                    </button>
-                </div>
-                
-    
+                    </button>   
             </form>
         </div>
     </div>
+    <!-- See latest vacation ideas -->
     <div class="container-fluid image-slider mt-5">
         <center>
             <h1>See latest vacation ideas</h1>
@@ -95,7 +95,8 @@
             <iframe src="slider/slider.html" frameborder="0" width="83%" height="274px"></iframe>
         </center>
     </div>
-    <div class="container-fluid image-slider mt-3">
+    <!-- Recent Holiday location -->
+    <section class="container-fluid">
         <center>
             <h1>Recent Holiday location</h1>
             <p class="m-0">
@@ -106,7 +107,286 @@
                 <i class="bi bi-diamond"></i>
             </p>
         </center>
-    </div>
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="row thalie mt-3">
+                        <div class="col-md-5 p-0">
+                            <img src="images/thalie-1.png" alt="thalie-1" id="thalie-1" class="w-100 img-h">
+                            <img src="images/thalie-1.png" onclick="ThalieImg1()" alt="thalie-1" class="w-25">
+                            <img src="images/thalie-2.png" onclick="ThalieImg2()" alt="thalie-2" class="w-25">
+                            <img src="images/thalie-3.png" onclick="ThalieImg3()" alt="thalie-3" class="w-25">
+                            <img src="images/thalie-4.png" onclick="ThalieImg4()" alt="thalie-4" class="w-25">
+                            <script>
+                                function ThalieImg1(){
+                                    document.getElementById('thalie-1').src="images/thalie-1.png";
+                                }
+                                function ThalieImg2(){
+                                    document.getElementById('thalie-1').src="images/thalie-2.png";
+                                }
+                                function ThalieImg3(){
+                                    document.getElementById('thalie-1').src="images/thalie-3.png";
+                                }
+                                function ThalieImg4(){
+                                    document.getElementById('thalie-1').src="images/thalie-4.png";
+                                }
+                            </script>
+                        </div>
+                        <div class="col-md-7 location-content p-4">
+                            <h5>Thalie 5</h5>
+                            <p>Thalie 5 is located on the exclusive Belle Riviere estate, which is home to several of Luxury Retreats' finest villas in Mauritius.</p>
+                            <span><i class="glyphicon glyphicon-bed"></i>3</span>
+                            <span><i class="fa-solid fa-bath"></i>5</span>
+                            <span><img src="images/palm-tree.png" alt=""></span> - <span style="background-color: black; color: white; letter-spacing: 0;">Beach front</span><br>
+                            <button type="button" class="btn-danger rounded-pill btn mt-1">BOOK NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="row thalie mt-3">
+                        <div class="col-md-5 p-0">
+                            <img src="images/kapalua-1.png" alt="kapalua-1" id="kapalua-1" class="w-100 img-h">
+                            <img src="images/kapalua-1.png" onclick="kapalua1()" alt="kapalua-1" class="w-25">
+                            <img src="images/kapalua-2.png" onclick="kapalua2()" alt="kapalua-2" class="w-25">
+                            <img src="images/kapalua-3.png" onclick="kapalua3()" alt="kapalua-3" class="w-25">
+                            <img src="images/kapalua-4.png" onclick="kapalua4()" alt="kapalua-4" class="w-25">
+                            <script>
+                                function kapalua1(){
+                                    document.getElementById('kapalua-1').src="images/kapalua-1.png";
+                                }
+                                function kapalua2(){
+                                    document.getElementById('kapalua-1').src="images/kapalua-2.png";
+                                }
+                                function kapalua3(){
+                                    document.getElementById('kapalua-1').src="images/kapalua-3.png";
+                                }
+                                function kapalua4(){
+                                    document.getElementById('kapalua-1').src="images/kapalua-4.png";
+                                }
+                            </script>
+                        </div>
+                        <div class="col-md-7 location-content p-4">
+                            <h5>Montage kapalua</h5>
+                            <p>You’ll be greeted by an scenic drive along the West Maui Mountains and crystal blue waters.</p>
+                            <span><i class="glyphicon glyphicon-bed"></i>1</span>
+                            <span><i class="fa-solid fa-bath"></i>1</span>
+                            <span><i class="fa-solid fa-umbrella-beach"></i> </span>
+                            <span><i class="fa-solid fa-water-ladder"></i></span><br>
+                            <button type="button" class="btn-danger rounded-pill btn mt-1">BOOK NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="row thalie mt-3">
+                        <div class="col-md-5 p-0">
+                            <img src="images/agua-1.png" alt="agua-1" id="agua" class="w-100 img-h">
+                            <img src="images/agua-1.png" onclick="AguaImg1()" alt="agua-1" class="w-25">
+                            <img src="images/agua-2.png" onclick="AguaImg2()" alt="agua-2" class="w-25">
+                            <img src="images/agua-3.png" onclick="AguaImg3()" alt="agua-3" class="w-25">
+                            <img src="images/agua-4.png" onclick="AguaImg4()" alt="agua-4" class="w-25">
+                            <script>
+                                function AguaImg1(){
+                                    document.getElementById('agua').src="images/agua-1.png";
+                                }
+                                function AguaImg2(){
+                                    document.getElementById('agua').src="images/agua-2.png";
+                                }
+                                function AguaImg3(){
+                                    document.getElementById('agua').src="images/agua-3.png";
+                                }
+                                function AguaImg4(){
+                                    document.getElementById('agua').src="images/agua-4.png";
+                                }
+                            </script>
+                        </div>
+                        <div class="col-md-7 location-content p-4">
+                            <h5>Casa Del Agua</h5>
+                            <p>After a breakfast catered to your taste and served at your leisure, relax in a hammock under the shade of a palm tree or let the.</p>
+                            <span><i class="glyphicon glyphicon-bed"></i>4</span>
+                            <span><i class="fa-solid fa-bath"></i>4</span>
+                            <span><i class="fa-solid fa-umbrella-beach"></i> </span>
+                            <span><i class="fa-solid fa-water-ladder"></i></span><br>
+                            <button type="button" class="btn-danger rounded-pill btn mt-1">BOOK NOW</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="row thalie mt-3">
+                        <div class="col-md-5 p-0">
+                            <img src="images/jaguar-1.png" alt="jaguar-1" id="jaguar-1" class="w-100 img-h">
+                            <img src="images/jaguar-1.png" onclick="Jaguar1()" alt="jaguar-1" class="w-25">
+                            <img src="images/jaguar-2.png" onclick="Jaguar2()" alt="jaguar-2" class="w-25">
+                            <img src="images/jaguar-3.png" onclick="Jaguar3()" alt="jaguar-3" class="w-25">
+                            <img src="images/jaguar-4.png" onclick="Jaguar4()" alt="jaguar-4" class="w-25">
+                            <script>
+                                function Jaguar1(){
+                                    document.getElementById('jaguar-1').src="images/jaguar-1.png";
+                                }
+                                function Jaguar2(){
+                                    document.getElementById('jaguar-1').src="images/jaguar-2.png";
+                                }
+                                function Jaguar3(){
+                                    document.getElementById('jaguar-1').src="images/jaguar-3.png";
+                                }
+                                function Jaguar4(){
+                                    document.getElementById('jaguar-1').src="images/jaguar-4.png";
+                                }
+                            </script>
+                        </div>
+                        <div class="col-md-7 location-content p-4">
+                            <h5>Casa Jaguar</h5>
+                            <p>Sleek and sophisticated like the animal for which it has been named, Casa Jaguar is an immaculate tropical luxury villa located.</p>
+                            <span><i class="glyphicon glyphicon-bed"></i>4</span>
+                            <span><i class="fa-solid fa-bath"></i>4</span>
+                            <span><i class="fa-solid fa-water-ladder"></i></span><br>
+                            <button type="button" class="btn-danger rounded-pill btn mt-1">BOOK NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- why we are different -->
+    <section class="container-fluid mt-3">
+        <center>
+            <h1>Why we are different</h1>
+            <p class="m-0">
+                <i class="bi bi-diamond"></i>
+                <i class="bi bi-diamond"></i>
+                <i class="bi bi-diamond-fill"></i>
+                <i class="bi bi-diamond"></i>
+                <i class="bi bi-diamond"></i>
+            </p>
+        </center>
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <center>
+                        <div class="why-circle">
+                            <img src="images/Vector-1.png" alt="Vector-1" class="vector">
+                        </div>
+                        <h4>Tailor-Made Packeges</h4>
+                        <p>When it comes to delivering the best planned holiday package to you, we strive to exceed your expectations. For us, it has to be spot-on. We do what we do in the ideal way possible.</p>
+                    </center>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <center>
+                        <div class="why-circle">
+                            <img src="images/Vector-2.png" alt="Vector-2" class="vector">
+                        </div>
+                        <h4>Best Experience</h4>
+                        <p>At Purplerain Holidays, we choose to put forth an essence of our own expertise and firsthand experiences into our services and method of planning.</p>
+                    </center>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <center>
+                        <div class="why-circle">
+                            <img src="images/Vector-3.png" alt="Vector-3" class="vector">
+                        </div>
+                        <h4>Exquisite Service</h4>
+                        <p>From the moment you make the first call to enquire, our services are geared up. From the time booking, to your stay and well after the trip as well, we will guide you and be at your back and call.</p>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid send-msg">
+        <div class="row msg-row">
+            <div class="col-md-7 col-sm-2"></div>
+            <div class="col-md-3 col-sm-8 msg-box">
+                <h3>Send us a message</h3>
+                <input type="text" placeholder="Your name" class="form-control mt-1">
+                <input type="email" placeholder="Email" class="form-control mt-1">
+                <input type="text" placeholder="Message" class="form-control mt-1">
+                <button type="button" class="btn rounded-pill">SEND</button>
+            </div>
+            <div class="col-md-2 col-sm-2"></div>
+        </div>
+    </section>
+    <footer class="text-white">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-7 col-12">
+                <div class="row">
+                    <div class="col-md-2 col-6">
+                        <b>Information</b><br>
+                        <a href="#">About us</a><br>
+                        <a href="#">Online enquiry</a><br>
+                        <a href="#">Call us</a><br>
+                        <a href="#">General enquiry</a><br>
+                        <a href="#">Booking conditions</a><br>
+                        <a href="#">Privacy policy</a><br>
+                        <a href="#">Refund policy</a><br>
+                    </div>
+                    <div class="col-md-2 col-6">
+                        <b>Experiences</b><br>
+                        <a href="#">Beach</a><br>
+                        <a href="#">Adventure</a><br>
+                        <a href="#">Wildlife</a><br>
+                        <a href="#">Honeymoon</a><br>
+                        <a href="#">Culture heritage</a><br>
+                        <a href="#">Natute</a><br>
+                        <a href="#">Spiritual</a><br>
+                        <a href="#">Hill station</a><br>
+                    </div>
+                    <div class="col-md-2 col-12">
+                        <b>Theme</b><br>
+                        <a href="#">Party</a><br>
+                        <a href="#">Wedding</a><br>
+                        <a href="#">Group tours</a><br>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-md-6 col-6">
+                                <b>Popular_destination</b><br>
+                                <a href="#">Leh-Ladakh</a><br>
+                                <a href="#">Manali</a><br>
+                                <a href="#">Ooty</a><br>
+                                <a href="#">Allepey</a><br>
+                                <a href="#">Darjeeling</a><br>
+                                <a href="#">Goa</a><br>
+                                <a href="#">Mahabaleshwar</a><br>
+                                <a href="#">Ram setu</a>
+                            </div>
+                            <div class="col-md-6 col-6">
+                                <b>&nbsp;</b><br>
+                                <a href="#">coorg</a><br>
+                                <a href="#">Mysore</a><br>
+                                <a href="#">Gir</a><br>
+                                <a href="#">Kabini</a><br>
+                                <a href="#">Jaipur</a><br>
+                                <a href="#">Kodaikanal</a><br>
+                                <a href="#">Andaman</a><br>
+                                <a href="#">Shimla</a><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="row">
+                    <div class="col-md-1"></div>
+                    <div class="col-md-8 owner">
+                        <p><span>Phone:</span> (+91)76228-22556</p>
+                        <p><span>Email:</span> maraviya.raj.raj@gmail.com</p>
+                        <b>Address</b>
+                        <p>401-A, billipatra,</p>
+                        <p>Mavdi main road,</p>
+                        <p>Rajkot - 360004,</p>
+                        <p>Gujarat</p>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
