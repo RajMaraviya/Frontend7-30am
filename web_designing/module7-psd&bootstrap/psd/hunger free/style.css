@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+/* font-family: 'Great Vibes', cursive; */
+/* font-family: 'Open Sans', sans-serif; */
+body{
+    background-color: #fff;
+    color: #fff;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+.main{
+    height: 615px;
+    padding: 0;
+    background-image: url(images/main.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+nav{
+    background-color: #000000B3;
+    height: auto;
+}
+.logo{
+    font-size: 22px;
+    font-family: 'Great Vibes', cursive;
+    font-weight: 400;
+    color: #d3a153;
+}
+.logo img{
+    width: 30px;
+}
+.logo span{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+    letter-spacing: -1px;
+    color: #fff;
+}
+nav .brands{
+    letter-spacing: 15px;
+    font-size: 15px;
+}
+nav .menu a{
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: 11px;
+    margin: 0px 6px;
+}
+nav .menu a:nth-child(1){
+    color: #d3a153;
+}
+.navbar-icon{
+    display: none;
+}
+.hero-content{
+    margin-top: 12%;
+}
+.hero h2{
+    color: #d3a153;
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+    font-weight: 100;
+    margin: 0px;
+}
+.hero h3{
+    font-weight: 700;
+    font-size: 31px;
+    letter-spacing: 2px; 
+    color: #fff; 
+}
+.hero img{
+    width: 20px;
+    margin-bottom: 10px;
+}
+.hero p{
+    font-size: 10px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+.hero .booking{
+    background-color: #fff;
+    padding: 0;
+    width: 500px;
+    color: #d3a153;
+    font-weight: 200;
+}
+.hero .booking input{
+    width: 26%;
+    text-align: center;
+    font-size: 12px;
+    border: none;
+}
+.hero .booking button{
+    width: 90px;
+    background-color: #d3a153;
+    border-radius: 0;
+    color: #fff;
+    padding: 10px;
+    font-size: 10px;
+}
+h1{
+    color: #d3a253aa;
+    font-family: 'Great Vibes', cursive;
+    font-size: 25px;
+}
+h3{
+    color: #000000d1;
+    font-size: 15px;
+    font-weight: 700;
+}
+.about img{
+    width: 12px;
+}
+.about p{
+    color: #00000092;
+    font-size: 10px;
+}
+.check img{
+    width: 20px;
+    margin-bottom: 30px;
+}
+.info{
+    background-image: url(images/restaurant-691397.png);
+    height: 490px;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:320px) and (max-width:480px)
+{
+    .main{
+        height: 400px;
+    }
+    .logo{
+        font-size: 20px;
+        padding: 0 0 0 30px;
+    }
+    
+    nav .brands{
+        display: none;
+    }
+    nav .menu{
+        display: none;
+    }
+    .navbar-icon{
+        display: block;
+        width: fit-content;
+        border: transparent;
+        background-color: transparent;
+        font-size: 25px;
+    }
+    .hero-content{
+        margin-top: 18%;
+    }
+    nav .m-menu i{
+        letter-spacing: 10px;
+    }
+    nav .m-menu a {
+        color: #fff;
+        font-weight: 400;
+        text-decoration: none;
+        text-align: center;
+        font-size: 15px;
+    }    
+    nav .m-menu a:nth-child(1){
+        color: #d3a153;
+    }
+    .hero .booking{
+        width: 300px;
+    }
+    .hero .booking input {
+        width: 25%;
+    }
+    
+    .hero .booking button {
+        width: 55px;
+    }
+    .abt-img{
+        padding: 7% !important;
+    }
+    .about{
+        margin: 0 !important;
+        padding: 0 7%;
+    }
+}
+
+@media only screen and (min-width:481px) and (max-width:768px)
+{
+    .main{
+        height: 450px;
+    }
+    .logo{
+        font-size: 23px;
+        padding: 0 0 0 30px;
+    }
+    
+    nav .brands{
+        display: none;
+    }
+    nav .menu{
+        display: none;
+    }
+    .navbar-icon{
+        display: block;
+        width: fit-content;
+        border: transparent;
+        background-color: transparent;
+        font-size: 25px;
+    }
+    nav .m-menu i{
+        letter-spacing: 10px;
+    }
+    nav .m-menu a {
+        color: #fff;
+        font-weight: 400;
+        text-decoration: none;
+        text-align: center;
+        font-size: 15px;
+    }    
+    nav .m-menu a:nth-child(1){
+        color: #d3a153;
+    }
+    .hero .booking{
+        width: 350px;
+    }
+    .hero .booking input {
+        width: 25%;
+    }
+    .hero .booking button {
+        width: 67.5px;
+    }
+    .abt-img{
+        padding: 7% !important;
+    }
+    .about{
+        margin: 0 !important;
+        padding: 0 7%;
+    }
+}
+@media only screen and (min-width:769px) and (max-width:1024px)
+{
+    
+}
