@@ -126,6 +126,91 @@ h3{
     background-position: center;
     background-size: cover;
 }
+.time-card{
+    background-color: #171413;
+}
+.time-card b{
+    font-size: 12px;
+    font-weight: 500;
+}
+.time-card p{
+    margin: 3px;
+    font-size: 10px;
+    color: #d3d3d3;
+    font-weight: 300;
+}
+.time-card button{
+    font-size: 10px;
+    padding:5px 10px;
+    background: transparent;
+    border-radius: 50px;
+    color: #d3a153;    
+    border: 1px solid #d3a153;
+}
+.starters ul{
+ padding: 10px !important;
+}
+.starters li{
+    font-family: 'Open Sans';
+    margin-bottom: 10px;
+}
+.starters b{
+    font-size: 13px;
+    color: #000000;
+}
+.starters span{
+    font-weight: 400;
+    color: #7a7a7a;
+    font-size: 10px;
+}
+.starters .price{
+    float: right;
+    font-weight: 400;
+    font-size: 12px;
+    color: #d3a153;
+}
+.blog .row img{
+    width: 100%;
+}
+.blog .row p{
+    color: #000000;
+    font-size: 12px;
+    font-weight: 200;
+}
+.blog .row span{
+    font-weight: 500;
+}
+.gallery .row img{
+    height: 250px;
+}
+footer{
+    background-image: url(images/architecture-1837150.png);
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+}
+footer b{
+    text-align: left !important;
+    font-size: 15px;
+    font-weight: 500;
+}
+footer i{
+    color: #d3a153;
+    margin-right: 7px;
+}
+footer p{
+    font-size: 12px;
+    font-weight: 200;
+    margin: 0;
+    margin-top: 7px;
+}
+footer a{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
 
 
 
@@ -192,6 +277,23 @@ h3{
         margin: 0 !important;
         padding: 0 7%;
     }
+    .starters ul{
+        padding: 0px !important;
+    }
+    .starters b{
+        font-size: 11px;
+        color: #000000;
+    }
+    .blog .row h5{
+        font-size: 17px;
+    }
+    .gallery .row img{
+        height: 150px;
+    }
+    footer{
+        height: auto;
+    }
+    
 }
 
 @media only screen and (min-width:481px) and (max-width:768px)
@@ -246,8 +348,27 @@ h3{
         margin: 0 !important;
         padding: 0 7%;
     }
+
+    .starters ul{
+        padding: 0px !important;
+    }
+    .starters b{
+        font-size: 11px;
+        color: #000000;
+    }
+    .blog .row h5{
+        font-size: 14px;
+    }
+    .gallery .row img{
+        height: 200px;
+    }
+    footer{
+        height: auto;
+    }
 }
 @media only screen and (min-width:769px) and (max-width:1024px)
 {
-    
+    .blog .row h5{
+        font-size: 14px;
+    }
 }
