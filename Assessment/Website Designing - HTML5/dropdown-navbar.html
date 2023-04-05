@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DropDown</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <img src="TOPS-logo.png" alt="">
+        <dl class="menu">
+            <dt><a href="#">Home</a></dt>
+            <dt><a href="#">About</a></dt>
+            <dt class="dropdown"><a href="#">Services <i class="fa-solid fa-chevron-down"></i></a>
+                <dl class="dropdown-menu">
+                    <dt><a href="#">Web Design</a></dt>
+                    <dt><a href="#">Marketing</a></dt>
+                    <dt><a href="#">WordPress</a></dt>
+                    <dt class="other"><a href="#">more </a><i class="fa-solid fa-chevron-right"></i>
+                        <dl class="other-menu">
+                            <dt><a href="#">HTML</a></dt>
+                            <dt><a href="#">CSS</a></dt>
+                            <dt><a href="#">JavaScript</a></dt>
+                            <dt><a href="#">Jquery</a>
+                                
+                            </dt>
+                        </dl>
+                    </dt>
+                </dl>
+            </dt>
+            <dt><a href="#">Blog</a></dt>
+            <dt><a href="#">Contact</a></dt>
+            <dt><button><a href="#">Login</a></button></dt>
+        </dl>
+    </div>
+</body>
+</html>
