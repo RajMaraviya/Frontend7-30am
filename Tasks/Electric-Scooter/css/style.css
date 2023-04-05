@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;700&display=swap');
+/* font-family: 'Oxygen', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+/* font-family: 'Open Sans', sans-serif; */
+
+*{
+    font-family: 'Oxygen', sans-serif;
+}
+body{
+    overflow-x: hidden;
+    box-sizing: border-box;
+    color: white;
+}
+.home{
+    background-image: url(../images/main.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+}
+nav{
+    height: auto;
+    background-color: #0000008c;
+    position: sticky;
+    top: 0px;
+    backdrop-filter: blur(50px);
+}
+.main{
+    height: 500px;
+}
+.menu li{
+    display: inline-block;
+}
+.menu li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+}
+.acc button{
+    padding: 3px 5.5px;
+    font-size: 10px;
+}
+.acc span{
+    font-size: 9px;
+    width: fit-content;
+    margin: 0;
+    color: white;
+}
+.main .scooter-info{
+    width: 70%;
+    font-weight: 100 !important;
+    font-size: 11px;
+    line-height: 25px;
+}
+.main a{
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+.img{
+    height: 50px;
+}
+.navbar-icon{
+    display: none;
+}
+.slider div{
+    width: 70px;
+}
+.products{
+    height: 687px;
+}
+.img-1:hover .prdct-info{
+    display: block;
+    background: linear-gradient(0deg, rgba(0,0,0,0.6460784142758667) 31%, rgba(255,255,255,0) 100%);
+    bottom: 157px;
+    animation: mymove 500ms;
+}
+.prdct-info{
+    display: none;
+    
+}
+@keyframes mymove {
+    0% {bottom: 100px; opacity: 0;}
+    50%{opacity: 0;}
+    100% {bottom: 157px; opacity: 0.9;}
+}
+.about .rider-1{
+    background-image: url(../images/option-1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.rider-1 div:nth-child(1),.rider-2 div:nth-child(1){
+    width: 30%;
+}
+.rider-1 p{
+    width: 75%;
+    font-weight: 100;
+    font-size: 12px;
+}
+.rider-1 a{
+    font-size: 13px;
+}
+.about .rider-2{
+    background-image: url(../images/option-4.jpg);
+    background-position: top;
+    background-size: cover;
+}
+
+.rider-2 p{
+    width: 75%;
+    font-weight: 100;
+    font-size: 12px;
+}
+.rider-2 a{
+    font-size: 13px;
+}
+
+
+
+@media only screen and (min-width:320px) and (max-width:480px) {
+    .home{
+        background-position: right;
+    }
+    .logo a{
+        font-size: 15px !important;
+    }
+    .navbar-icon{
+        display: block;
+        font-size: 15px;
+        padding: 2px 7px;
+    }
+    .menu{
+        display: none;
+    }
+    ul li{
+        width: 100%;
+        text-align: center;
+    }
+    ul li a{
+        color:white;
+        text-decoration: none;
+    }
+    ul li span{
+        font-size: 12px;
+        font-weight: 700;
+    }
+    .acc span{
+        display: none;
+    }
+    .main span{
+        color: orange !important;
+    }
+    .img-1:nth-child(1){
+        height: 490px !important;
+    }
+    .img-1:nth-child(3){
+        height: 230px !important;
+    }
+    .slider div{
+        width: 60px !important;
+    }
+    .products{
+        height: fit-content !important;
+    }
+    .rider-1 div:nth-child(1),.rider-2 div:nth-child(1){
+        width: 70%;
+    }
+    
+
+}
+@media only screen and (min-width:481px) and (max-width:768px) {
+    .home{
+        background-position: right;
+    }
+    .logo a{
+        font-size: 15px !important;
+    }
+    .navbar-icon{
+        display: block;
+        font-size: 15px;
+        padding: 2px 7px;
+    }
+    .menu{
+        display: none;
+    }
+    ul li{
+        width: 100%;
+        text-align: center;
+    }
+    ul li a{
+        color:white;
+        text-decoration: none;
+    }
+    ul li span{
+        font-size: 12px;
+        font-weight: 700;
+    }
+    .acc span{
+        display: none;
+    }
+    .main span{
+        color: orange !important;
+    }
+    .img-1:nth-child(1){
+        height: 490px !important;
+    }
+    .img-1:nth-child(3){
+        height: 230px !important;
+    }
+    .slider div{
+        width: 60px !important;
+    }
+    .products{
+        height: 687px !important;
+    }
+    .rider-1 div:nth-child(1),.rider-2 div:nth-child(1){
+        width: 70%;
+    }
+    
+
+}
