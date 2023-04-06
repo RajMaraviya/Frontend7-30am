@@ -6,8 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Clock</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    
 </head>
 <body>
-    
+    <div class="date">
+        <h3>
+            <span id="dayname">Day</span>, 
+            <span id="mo">jan <span id="date"> 01</span></span>, 
+            <span id="year">2023</span>
+        </h3>
+    </div>
+    <div class="time">
+        <div>
+            <h3>
+                <span id="hours">12</span> :
+                <span id="minutes">60</span> :
+                <span id="seconds">60</span>
+                <span id="am-pm">AM</span>
+            </h3>
+        </div>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
