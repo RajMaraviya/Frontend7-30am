@@ -21,7 +21,7 @@
 }
 
 body{
-    border: 2px double #535353;
+    /* border: 2px double #535353; */
     font-family: proximaR;
     overflow-x: hidden;
     background-color: #ecf0f1;
