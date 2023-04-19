@@ -1,0 +1,23 @@
+<script>
+    function abc(){
+        let a=parseInt(document.getElementById('a').value);
+        let b=parseInt(document.getElementById('b').value);
+
+        if(a>b)
+        {
+            document.write('a is bigger then b');
+        }
+        else if(b>a)
+        {
+            document.write('b is bigger then a');
+        }
+        else{
+            document.write('a and b is same');
+        }
+    }
+</script>
+<form action="" method="get">
+    <input type="text" id="a" placeholder="enter a" required><br>
+    <input type="text" id="b" placeholder="enter b" required>
+    <button type="submit" onclick="abc()">submit</button>
+</form>
