@@ -53,26 +53,26 @@
                     <td><a href="#" class="delete"><i class="far fa-times-circle"></a></i></td>
                     <td><img src="img/products/f1.jpg" alt=""></td>
                     <td>Cartoon Astonaut T-shirt</td>
-                    <td>$118.19</td>
-                    <td><input type="number" value="1"></td>
-                    <td>$118.19</td>
+                    <td>₹399.00</td>
+                    <td><input type="number" min="1" value="1" max="10" id="cartItem" onchange="productPrice()"></td>
+                    <td>₹<span id="sub-total">399</span></td>
                 </tr>
                 <tr>
                     <td><a href="#" class="delete"><i class="far fa-times-circle"></a></i></td>
                     <td><img src="img/products/f2.jpg" alt=""></td>
                     <td>Cartoon Astonaut T-shirt</td>
-                    <td>$118.19</td>
-                    <td><input type="number" value="1"></td>
-                    <td>$118.19</td>
+                    <td>799.00</td>
+                    <td><input type="number" min="1" value="1" max="10" id="cartItem1" onchange="productPrice1()"></td>
+                    <td>₹<span id="sub-total1">799</span></td>
                 </tr>
-                <tr>
+                <!-- <tr>
                     <td><a href="#" class="delete"><i class="far fa-times-circle"></a></i></td>
                     <td><img src="img/products/f3.jpg" alt=""></td>
                     <td>Cartoon Astonaut T-shirt</td>
-                    <td>$118.19</td>
-                    <td><input type="number" value="1"></td>
-                    <td>$118.19</td>
-                </tr>
+                    <td>969.00</td>
+                    <td><input type="number" min="1" value="1" max="10" id="cartItem2" onchange="productPrice2()"></td>
+                    <td>₹<span id="sub-total2">969</span></td>
+                </tr> -->
             </tbody>
         </table>
     </section>
@@ -90,7 +90,7 @@
             <table>
                 <tr>
                     <td>Cart Subtotal</td>
-                    <td>$335</td>
+                    <td id="cart-sub-total" onchange="crtTotal()">₹335</td>
 
                 </tr>
                 <tr>
@@ -98,8 +98,8 @@
                     <td>Free</td>
                 </tr>
                 <tr>
-                    <td><strong>Total</strong></td>
-                    <td><strong>$335</strong></td>
+                    <td><strong>Grand Total</strong></td>
+                    <td><strong>₹335</strong></td>
                 </tr>
             </table>
             <button class="normal">proceed to checkout</button>
@@ -157,7 +157,33 @@
             <p>&copy; 2023 copyright reserved R-Ecommerce website</p>
         </div>
     </footer>
-    
+
+    <script>
+        function productPrice(){
+            var a = document.getElementById('cartItem').value;
+            var b = 399*a;
+            document.getElementById('sub-total').innerHTML=b;
+        }
+        function productPrice1(){
+            var a = document.getElementById('cartItem1').value;
+            var b = 799*a;
+            document.getElementById('sub-total1').innerHTML=b;
+        }
+        //function productPrice2(){
+        //     var a = document.getElementById('cartItem2').value;
+        //     var e = 969*a;
+        //     document.getElementById('sub-total2').innerHTML=e;
+        //     let x = parseInt(document.getElementById('sub-total'));
+        //     let y = parseInt(document.getElementById('sub-total1'));
+        //     let z = parseInt(document.getElementById('sub-total2'));
+        //     let m = x+y+z;
+        //     document.getElementById('cart-sub-total').value=m;
+        // }
+        function crtTotal(){
+            var total = document.getElementById('');
+            document.getElementById('cart-sub-total').innerHTML=total;
+        }
+    </script>    
 
     <!-- main js file -->
     <script src="scrip.js"></script>
