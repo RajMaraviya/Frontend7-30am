@@ -1,0 +1,26 @@
+<script>
+//    var currenttime = Date();
+//    console.log(currenttime);
+
+    var date = new Date()
+    var d = date.getDate();
+    var hr = date.getHours();
+    var min = date.getMinutes();
+    var sec = date.getSeconds();
+    var yr = date.getFullYear();
+
+    // finding and listing month
+    var month = ["Jan","Feb","Mar","Apr","May","Jun","Jul","aug","Sept","Oct","nov","Dec"]
+    var monthNm = month[date.getMonth()];
+
+    // finding and listing day
+    var week = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+    var weekNm = week[date.getDay()];
+
+    console.log(hr+":"+min+":"+sec);
+    console.log(weekNm);
+    console.log(d);
+    console.log(monthNm);
+    console.log(yr);
+    console.log(date);
+</script>

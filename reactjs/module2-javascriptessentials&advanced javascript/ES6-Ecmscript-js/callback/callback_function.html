@@ -1,0 +1,14 @@
+<script>
+    var empinfo = [
+        {fname:"raj",lname:"maraviya",age:"21",salary:"23000",empid:"RMRJKT21"},
+        {fname:"jaydeep",lname:"patel",age:"22",salary:"20000",empid:"JYRJKT21"},
+        {fname:"rohan",lname:"antala",age:"23",salary:"24000",empid:"RMRJKT21"}
+        ]
+
+        //find and listing each value in from array
+        const listuserinfo = empinfo.map(test);
+        function test(listuserinfo) // test function is call back in empinfo.map(test)
+        {
+            document.write(listuserinfo.fname+"<br>"+listuserinfo.lname+"<br>"+listuserinfo.age+"<br>"+listuserinfo.salary+"<br>"+listuserinfo.empid);
+        }
+</script>

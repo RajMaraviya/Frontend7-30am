@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function off()
+        {
+            document.getElementById('img').src="images/off.png";
+            document.getElementById('body').style=" background-color: black;";
+        }
+        function on(){
+            document.getElementById('img').src="images/on.png";
+            document.getElementById('body').style=" background-color: white;";
+        }
+        
+    </script>
+</head>
+<body id="body" style="margin: 0; padding: 0;">
+        <center>
+            <img id="img" src="images/off.png" style="width: 200px; height: auto;">
+            <br><br>
+            <button type="button" onclick="off()">Off</button>
+            <button type="button" onclick="on()">On</button>
+        </center>
+</body>
+</html>

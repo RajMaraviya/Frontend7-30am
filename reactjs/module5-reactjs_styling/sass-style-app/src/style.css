@@ -1,0 +1,16 @@
+body {
+  background-color: #8b8b8a;
+}
+
+body form {
+  background-color: black;
+  padding: 20px;
+  width: 60%;
+}
+
+body form ul {
+  color: whitesmoke;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 30px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,22 @@
+$width:60%;
+$font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+$background-color: black;
+$font-size: 30px;
+
+
+body{
+    background-color: #8b8b8a;
+
+    form{
+        background-color: $background-color;
+        padding: 20px;
+        width: $width;
+        
+        ul{
+            color: whitesmoke;
+            font-family: $font-family;
+            font-size: $font-size;
+        }
+    }
+
+}

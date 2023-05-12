@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <!-- BOM : broswer object module : redirect one page to another web broswer page
+      BOM are used to find your web broswer screen : width, height
+    -->
+<script>
+    function lg()
+    {
+        if(confirm('Are you sure to Logout as customer ?'))
+        {    
+        alert('you are Logut successfully')
+        window.location='https://www.google.com';
+        }
+
+        else 
+        {
+            window.location='window.location.html';
+        }
+
+    }
+</script>
+   <button type="button" onclick="lg()">Logout here!</button> 
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+body .main-section {
+  margin: auto;
+  width: 25%;
+}
+
+body .main-section input {
+  width: 45%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  margin: 0;
+  padding: 0px 6px;
+}
+
+body .main-section button {
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 100%;
+  color: #000000;
+}
+/*# sourceMappingURL=style.css.map */
