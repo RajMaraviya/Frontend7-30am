@@ -1,0 +1,42 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "user":[
+    {
+      "id": 0,
+      "fname":"raj",
+      "lname":"maraviya",
+      "email":"maraviya.raj.raj@gmail.com",
+      "message":"hello"
+    },
+    {
+      "id": 1,
+      "fname":"rahul",
+      "lname":"savani",
+      "email":"savani.rahul@gmail.com",
+      "message":"hello, im rahul"
+    },
+    {
+      "id": 2,
+      "fname":"rohan",
+      "lname":"antala",
+      "email":"antala.rohan@gmail.com",
+      "message":"hello, im rohan"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

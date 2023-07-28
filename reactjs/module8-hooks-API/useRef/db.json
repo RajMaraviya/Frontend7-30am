@@ -1,0 +1,50 @@
+{
+  "user": [
+    {
+      "id": 0,
+      "fname": "raj",
+      "lname": "maraviya",
+      "email": "maraviya.raj.raj@gmail.com",
+      "message": "hello"
+    },
+    {
+      "id": 1,
+      "fname": "rahul",
+      "lname": "savani",
+      "email": "savani.rahul@gmail.com",
+      "message": "hello, im rahul"
+    },
+    {
+      "id": 2,
+      "fname": "rohan",
+      "lname": "antala",
+      "email": "antala.rohan@gmail.com"
+    }
+  ],
+  "contact": [
+    {
+      "id": 1,
+      "name": "Raj",
+      "email": "xyz@gmail.com",
+      "mobile": 9893345243,
+      "subject": "subject",
+      "message": "hello"
+    },
+    {
+      "name": "RAJ",
+      "email": "eradfvnadf@gmail.com",
+      "mobile": "912382323648376",
+      "subject": "hi",
+      "message": "hello in raj",
+      "id": 2
+    },
+    {
+      "name": "jaydeep",
+      "email": "jaydeep@gmail.com",
+      "mobile": "98677865646",
+      "subject": "hcbdhjcvb",
+      "message": "jkhgdfvb ",
+      "id": 3
+    }
+  ]
+}

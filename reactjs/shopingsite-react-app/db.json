@@ -1,0 +1,151 @@
+{
+  "product": [
+    {
+      "pname": "shirt",
+      "link": "https://img.ltwebstatic.com/images3_pi/2023/06/15/1686819692b9f66de63e412440119635e50b0f5cce_thumbnail_600x.jpg",
+      "link1": "https://img.ltwebstatic.com/images3_pi/2021/07/21/162684535335f42cd6c33efaaed86838f060d6e535_thumbnail_600x.jpg",
+      "link2": "https://img.ltwebstatic.com/images3_pi/2021/11/26/1637909944e099ef47e428e454dcbe2e58e972c416_thumbnail_600x.jpg",
+      "link3": "https://img.ltwebstatic.com/images3_pi/2022/03/28/1648434026a237e785c32480234aa21e946d92c29e_thumbnail_600x.jpg",
+      "link4": "https://img.ltwebstatic.com/images3_pi/2022/11/10/166808430967f2ae1f2351ff98f19a0a543774a495_thumbnail_600x.jpg",
+      "category": "mens product",
+      "price": "2500",
+      "offerprice": "2199",
+      "rating": "4.0",
+      "description": "cotton shirt",
+      "id": 1
+    },
+    {
+      "pname": "shirt",
+      "link": "https://img.ltwebstatic.com/images3_pi/2021/07/21/162684535335f42cd6c33efaaed86838f060d6e535_thumbnail_600x.jpg",
+      "link1": "https://img.ltwebstatic.com/images3_pi/2023/06/15/1686819692b9f66de63e412440119635e50b0f5cce_thumbnail_600x.jpg",
+      "link2": "https://img.ltwebstatic.com/images3_pi/2021/11/26/1637909944e099ef47e428e454dcbe2e58e972c416_thumbnail_600x.jpg",
+      "link3": "https://img.ltwebstatic.com/images3_pi/2022/03/28/1648434026a237e785c32480234aa21e946d92c29e_thumbnail_600x.jpg",
+      "link4": "https://img.ltwebstatic.com/images3_pi/2021/07/13/16261550470f36204883eb07aa2ad7ce73b8a68aee_thumbnail_600x.jpg",
+      "category": "mens wear",
+      "price": "2500",
+      "offerprice": "2199",
+      "rating": "4.5",
+      "description": "cotton shirt",
+      "id": 2
+    },
+    {
+      "pname": "shirt",
+      "link": "https://img.ltwebstatic.com/images3_pi/2022/03/28/1648434026a237e785c32480234aa21e946d92c29e_thumbnail_600x.jpg",
+      "link1": "https://img.ltwebstatic.com/images3_pi/2023/04/03/16804888854e75fe28a4ba68535ae66312b9b64a71_thumbnail_600x.jpg",
+      "link2": "https://img.ltwebstatic.com/images3_pi/2023/07/04/16884612713ac500d27b97d8bb8cb4893cf5173e04_thumbnail_600x.jpg",
+      "link3": "https://img.ltwebstatic.com/images3_pi/2023/03/03/16778242413b996d4b1e36759bbaad18fe14b80703_thumbnail_900x.webp",
+      "link4": "https://img.ltwebstatic.com/images3_pi/2023/05/15/16841316524f3f4ec72ac6e14efbcd76cbfb16a8be_thumbnail_900x.webp",
+      "category": "mens wear",
+      "price": "2500",
+      "offerprice": "2199",
+      "rating": "4.7",
+      "description": "cotton",
+      "id": 3
+    },
+    {
+      "pname": "shirt",
+      "link": "https://img.ltwebstatic.com/images3_pi/2021/09/28/16328130407a938ede296bb67073d9933dfa35769b_thumbnail_600x.jpg",
+      "link1": "https://img.ltwebstatic.com/images3_pi/2021/07/01/1625103876f9693daad357d024174f7353dbad7f7f_thumbnail_600x.jpg",
+      "link2": "https://img.ltwebstatic.com/images3_pi/2023/02/14/1676340519b849057b7d946577ff2ce716fb2f76c2_thumbnail_600x.jpg",
+      "link3": "https://img.ltwebstatic.com/images3_pi/2023/03/29/16800666991db6f2a1882a45c3776a3a16e4278c6f_thumbnail_600x.jpg",
+      "link4": "https://img.ltwebstatic.com/images3_pi/2023/06/05/168594448845f4199cff8c9d2777c0b05f29ced10a_thumbnail_600x.jpg",
+      "category": "-select category-",
+      "price": "2323",
+      "offerprice": "1835",
+      "rating": "3.9",
+      "description": "Cotton",
+      "id": 4
+    },
+    {
+      "pname": "shirt",
+      "link": "https://img.ltwebstatic.com/images3_pi/2021/09/28/16328130407a938ede296bb67073d9933dfa35769b_thumbnail_600x.jpg",
+      "link1": "https://img.ltwebstatic.com/images3_pi/2021/07/01/1625103876f9693daad357d024174f7353dbad7f7f_thumbnail_600x.jpg",
+      "link2": "https://img.ltwebstatic.com/images3_pi/2023/02/14/1676340519b849057b7d946577ff2ce716fb2f76c2_thumbnail_600x.jpg",
+      "link3": "https://img.ltwebstatic.com/images3_pi/2023/03/29/16800666991db6f2a1882a45c3776a3a16e4278c6f_thumbnail_600x.jpg",
+      "link4": "https://img.ltwebstatic.com/images3_pi/2023/06/05/168594448845f4199cff8c9d2777c0b05f29ced10a_thumbnail_600x.jpg",
+      "category": "mens product",
+      "price": "2323",
+      "offerprice": "1834",
+      "rating": "3.9",
+      "description": "Cotton",
+      "id": 5
+    },
+    {
+      "pname": "shirt",
+      "link": "https://img.ltwebstatic.com/images3_pi/2021/09/28/16328130407a938ede296bb67073d9933dfa35769b_thumbnail_600x.jpg",
+      "link1": "https://img.ltwebstatic.com/images3_pi/2021/07/01/1625103876f9693daad357d024174f7353dbad7f7f_thumbnail_600x.jpg",
+      "link2": "https://img.ltwebstatic.com/images3_pi/2023/02/14/1676340519b849057b7d946577ff2ce716fb2f76c2_thumbnail_600x.jpg",
+      "link3": "https://img.ltwebstatic.com/images3_pi/2023/03/29/16800666991db6f2a1882a45c3776a3a16e4278c6f_thumbnail_600x.jpg",
+      "link4": "https://img.ltwebstatic.com/images3_pi/2023/06/05/168594448845f4199cff8c9d2777c0b05f29ced10a_thumbnail_600x.jpg",
+      "category": "mens product",
+      "price": "2323",
+      "offerprice": "1834",
+      "rating": "3.9",
+      "description": "Cotton",
+      "id": 6
+    }
+  ],
+  "cart": [
+    {
+      "pname": "shirt",
+      "link": "https://img.ltwebstatic.com/images3_pi/2023/06/15/1686819692b9f66de63e412440119635e50b0f5cce_thumbnail_600x.jpg",
+      "category": "mens wear",
+      "price": "2500",
+      "offerprice": "2199",
+      "qty": "1",
+      "id": 1
+    }
+  ],
+  "customer": [
+    {
+      "fname": "raj",
+      "lname": "maraviya",
+      "email": "maraviya.raj.raj@gmail.com",
+      "mobile": "986456789876",
+      "address": "rajokot, gujarat",
+      "subject": "hi",
+      "message": "hello",
+      "id": 1
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "category": [
+    {
+      "category": "mens product",
+      "id": 1
+    },
+    {
+      "category": "womans products",
+      "id": 2
+    },
+    {
+      "category": "kids product",
+      "id": 3
+    },
+    {
+      "category": "smart phones",
+      "id": 4
+    },
+    {
+      "category": "Chargers",
+      "id": 6
+    },
+    {
+      "category": "Home appliences",
+      "id": 8
+    },
+    {
+      "category": "laptops",
+      "id": 9
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

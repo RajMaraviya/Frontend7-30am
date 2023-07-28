@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 import Home from './components/Home';
 import About from './components/About';
 import Gallary from './components/Gallary';
+import PageNotFound from './components/PageNotFound';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,11 +19,12 @@ root.render(
     <Routes>
       <Route path='/' element={<Navbar />}>
         <Route index element={<Home />} />
+        <Route path='*' element={<PageNotFound />} />
         <Route path='/About' element={<About />} />
         <Route path='/Gallary' element={<Gallary />} />
       </Route>
 
-      <Route path='/Footer'   element={<Footer />}>
+      <Route path='/Footer'  element={<Footer />}>
 
       </Route>
     </Routes>
