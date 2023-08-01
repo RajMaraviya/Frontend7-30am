@@ -14,8 +14,8 @@ function App() {
       taskName: taskName.current.value,
       date: date.current.value
     }
-    axios.post("http://localhost:4000/task", insert)
-      .then()
+    axios.post("https://project-data-8dy4.onrender.com/task", insert)
+    .then()
     getTask();
     alert('Done')
   }
@@ -26,7 +26,7 @@ function App() {
     getTask();
   })
   function getTask() {
-    axios.get("http://localhost:4000/task")
+    axios.get("https://project-data-8dy4.onrender.com/task")
       .then((response) => {
         setTask(response.data)
       });
@@ -34,7 +34,7 @@ function App() {
 
 // delete task lists
   const deleteTaskHandler = (id) => {
-    axios.delete(`http://localhost:4000/task/${id}`)
+    axios.delete(`https://project-data-8dy4.onrender.com/task/${id}`)
     .then()
   }
   
@@ -45,12 +45,12 @@ function App() {
         <hr className='rounded' style={{border:"2px solid", backgroundColor:"red"}}/>
       
 
-      <div className="row text-center m-5">
+      <div className="row text-center m-md-3 justify-content-between">
         {task && task.map((item) => {
           return (
             <>
-              <div className="col-3">
-                <div className='rounded shadow-lg bg-transparent'>
+              <div className="col-md-6 col-sm-6 col-lg-4">
+                <div className='rounded shadow-lg bg-transparent '>
                   <div class="card border-1 bg-transparent mb-3">
                     <div class="card-header">Task {item.id}</div>
                     <div class="card-body">
@@ -71,25 +71,27 @@ function App() {
       </div>
 
       {/* Add task modal */}
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style={{backdropFilter:"blur(3px)"}}>
         <div class="modal-dialog text-white">
-          <div class="modal-content bg-dark">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <div class="input-group mb-3">
-                <span class="input-group-text bg-dark text-white" id="basic-addon1"><i class="bi bi-list-task"></i></span>
-                <input type="text" class="form-control bg-dark text-white" placeholder="Task Name" ref={taskName} />
-                <input type="date" class="form-control bg-dark text-white" ref={date} />
+          <form>
+            <div class="modal-content bg-transparent border-white">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Task title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="input-group mb-3">
+                  <span class="input-group-text bg-transparent border-white text-white" id="basic-addon1"><i class="bi bi-list-task"></i></span>
+                  <input type="text" class="form-control bg-transparent border-white text-white" placeholder="Task Name" ref={taskName} required />
+                  <input type="date" class="form-control bg-transparent border-white text-white" ref={date} required />
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancle</button>
+                <button type="submit" class="btn btn-info" data-bs-dismiss="modal" onClick={AddTaskHandler}>Add Task</button>
               </div>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancle</button>
-              <button type="button" class="btn btn-info" data-bs-dismiss="modal" onClick={AddTaskHandler}>Add Task</button>
-            </div>
-          </div>
+          </form>
         </div>
       </div>
       {/* <Task /> */}

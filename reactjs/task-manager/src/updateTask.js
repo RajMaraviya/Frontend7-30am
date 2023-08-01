@@ -9,7 +9,7 @@ export default function UpdateTask() {
   const taskName = useRef("")
   const date = useRef("");
   useEffect(() => {
-    axios.get(`http://localhost:4000/task/${id}`)
+    axios.get(`https://project-data-8dy4.onrender.com/task/${id}`)
       .then((response) => {
         taskName.current.value = response.data.taskName
         date.current.value = response.data.date
@@ -21,7 +21,7 @@ export default function UpdateTask() {
       date: date.current.value
     };
     //update the data using PUT method
-    axios.put(`http://localhost:4000/task/${id}`, update)
+    axios.put(`https://project-data-8dy4.onrender.com/task/${id}`, update)
       .then((response) => {
         alert('Update succesful')
         Navigate("/");
