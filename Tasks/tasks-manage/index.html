@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X- UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+        <title>Task App</title>
+    </head>
+    <body class="bg-white font-[Poppins]">
+        <div class="container relative min-h-screen py-12">
+            <!-- Add Task Box -->
+            <div onclick="showPopup()" class="absolute top-[88%] right-4 flex h-14 w-14 cursor-pointer items-center justify-center rounded-full bg-sky-500 font-medium text-white shadow-md">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                </svg>
+            </div>
+            <!-- Warpper -->
+            <div class="grid grid-cols-lg gap-4" data-wrapper></div>
+            <!-- Popup -->
+            <div id="popup" class="fixed inset-0 right-0 left-0 z-50 hidden h-full w-full items-center justify-center overflow-y-auto overflow-x-hidden bg-slate-900/25 opacity-0 backdrop-blur transition-opacity duration-500" aria-modal="true" role="dialog">
+                <!-- Modal content -->
+                <div class="w-full max-w-lg scale-0 transform px-4 opacity-0 transition-all duration-300">
+                    <div class="overflow-hidden rounded-lg bg-white shadow-md" id="headlessui-dialog-panel-11">
+                        <div class="relative shadow-sm">
+                            <!-- Form -->
+                            <form action="#" class="flex items-center justify-between">
+                                <input class="block flex-1 appearance-none bg-transparent py-4 pl-4 pr-12 text-base text-slate-900 placeholder:text-slate-600 focus:outline-none sm:text-sm sm:leading-6" placeholder="Create Taske..." type="text" />
+                                <!-- Appen Task -->
+                                <button onclick="addTask()" class="px-4" id="appen-task">
+                                    <svg class="h-6 w-6 cursor-pointer fill-slate-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Task Cards -->
+            <template>
+                <div class="flex flex-col justify-between space-y-4 rounded-2xl border border-gray-200 bg-white shadow-md">
+                    <div class="overflow-y-auto">
+                        <!-- Head -->
+                        <header class="border-b border-gray-200 p-4">
+                            <h1 class="text-lg font-medium"></h1>
+                            <i class="hidden cursor-pointer">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </i>
+                        </header>
+                        <!-- progress -->
+                        <div id="progress" class="mt-2 py-2 px-4">
+                            <div class="h-6 w-full rounded-full bg-gray-200 dark:bg-gray-700">
+                                <div class="h-full rounded-full bg-sky-500 py-1.5 text-center text-xs font-medium leading-none text-blue-100 transition-[width] duration-500" style="width: 0%" data-progress></div>
+                            </div>
+                        </div>
+
+                        <!-- Content -->
+                        <div class="space-y-3 py-2 px-4" data-task-content></div>
+                    </div>
+                    <div class="flex items-center justify-between border-t border-gray-300 p-4">
+                        <p class="date text-sm text-gray-600">September 8, 2022</p>
+                        <!-- Control -->
+                        <div class="flex items-center justify-end gap-4">
+                            <i onclick="upDate(this)" id="update" class="cursor-pointer hover:text-sky-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                                </svg>
+                            </i>
+                            <i onclick="deleteTask(this)" id="delete" class="cursor-pointer hover:text-red-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5">
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0"
+                                    />
+                                </svg>
+                            </i>
+                        </div>
+                    </div>
+                </div>
+            </template>
+            <!-- Check box -->
+            <template>
+                <div onclick="count(this)" class="group flex items-center justify-between">
+                    <input type="checkbox" value="" class="h-4 w-4 rounded-md border-gray-300 bg-gray-100 text-sky-600 focus:ring-2 focus:ring-sky-500 dark:border-gray-600 dark:bg-sky-500 dark:ring-offset-gray-800 dark:focus:ring-sky-500" />
+                    <label class="ml-2 mr-auto cursor-pointer text-sm font-medium text-gray-900">Default checkbox</label>
+                    <i onclick="deleteChild(this)" class="hidden z-10 cursor-pointer hover:text-red-700 group-hover:block">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M14.74 9l-.346 9m-4.788 0L9.26 9m9.968-3.21c.342.052.682.107 1.022.166m-1.022-.165L18.16 19.673a2.25 2.25 0 01-2.244 2.077H8.084a2.25 2.25 0 01-2.244-2.077L4.772 5.79m14.456 0a48.108 48.108 0 00-3.478-.397m-12 .562c.34-.059.68-.114 1.022-.165m0 0a48.11 48.11 0 013.478-.397m7.5 0v-.916c0-1.18-.91-2.164-2.09-2.201a51.964 51.964 0 00-3.32 0c-1.18.037-2.09 1.022-2.09 2.201v.916m7.5 0a48.667 48.667 0 00-7.5 0" />
+                        </svg>
+                    </i>
+                </div>
+            </template>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>
