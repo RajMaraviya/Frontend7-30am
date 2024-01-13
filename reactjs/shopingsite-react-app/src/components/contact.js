@@ -23,7 +23,7 @@ export default function Contact() {
             message: message.current.value
         }
 
-        axios.post("http://localhost:4000/customer", insert)
+        axios.post("https://project-data-8dy4.onrender.com/customer", insert)
             .then(() => {
                 alert('contact back you soon');
                 window.location="/Contact"

@@ -6,20 +6,21 @@ import { Nav } from 'react-bootstrap';
 
 export default function ManageProducts() {
   const Navigate = useNavigate();
-  const [product, setproduct] = useState(null);
+  const [product, setproduct] = useState([]);
 
   useEffect(() => {
     getProduct();
   }, [])
 
   function getProduct() {
-    axios.get("http://localhost:4000/product")
+    axios.get("https://project-data-8dy4.onrender.com/product")
       .then((response) => {
         setproduct(response.data)
+        console.log(response.data);
       });
   }
   function deleteProduct(id) {
-    fetch(`http://localhost:4000/product/${id}`, {
+    fetch(`https://project-data-8dy4.onrender.com/product/${id}`, {
       method: 'DELETE'
     }).then((result) => {
       result.json().then((resp) => {
@@ -41,7 +42,7 @@ export default function ManageProducts() {
               <div class="col-lg-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Manage Products</h4>
+                    <h4 class="card-title">Manage Products ({product.length})</h4>
                     <div class="table-responsive">
                       <table class="table table-bordered">
                         <thead>

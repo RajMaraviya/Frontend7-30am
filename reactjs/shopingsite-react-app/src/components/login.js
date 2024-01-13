@@ -19,9 +19,10 @@ export default function LogIn() {
                         <div class="form-check form-check-flat form-check-primary">
                                 <input type="checkbox" class="form-check-input bg-transparent border-white" />Remember
                         </div>
-                        <button type="submit" class="btn btn-primary mt-1">Login</button><br />
-                        <Link to="/admin-register" className=''>New user? Create an account</Link>
+                        <button type="submit" class="btn btn-primary mt-1"><Link to="/admin-layout" className='text-decoration-none text-white'>Login</Link></button><br />
+                        <Link to="/admin-register" className='text-muted fw-light'>New user? Create an account</Link>
                     </form>
+                    <Link to="/" className='text-muted fw-light'>Home page</Link>
                 </div>
             </div>
         </>

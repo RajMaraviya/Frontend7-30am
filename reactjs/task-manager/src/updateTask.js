@@ -23,7 +23,7 @@ export default function UpdateTask() {
     //update the data using PUT method
     axios.put(`https://project-data-8dy4.onrender.com/task/${id}`, update)
       .then((response) => {
-        alert('Update succesful')
+        alert('Updated')
         Navigate("/");
       });
   }

@@ -67,6 +67,34 @@
             </tr>
         </table>
     </div>
+    <div id="cart">
+        <table align="center" width="80%">
+            <tr>
+                <th>Product id</th>
+                <th>Image</th>
+                <th>Product name</th>
+                <th>Price</th>
+                <th>OfferPrice</th>
+                <th>Select Oty</th>
+                <th>Action</th>
+            </tr>
+            <tr align="center"  id="crt">
+                <td>1001</td>
+                <td><img src="../jQuery_delete/motorola-edge-30-fusion.png" style="width: 100px; height: auto;"></td>
+                <td>Motorola Edge30</td>
+                <td>Rs. 30,000-/</td>
+                <td>Rs. <input type="text" value="27999" id="offer-price"
+                        style="border:none; width: 45px; font-size: 15px;"> -/</td>
+                <td><input type="number" min="1" max="9" value="1" id="qty" onchange="carttotal()"></td>
+                <td> <a href="#"><button type="button" id="del-btn">Delete</button></a></td>
+            </tr>
+            <tr>
+                <td colspan="7" style="color: darkgrey;">
+                    <h4 align="right">Sub totals of Products is : Rs. <span id="tot">27999</span>-/</h4>
+                </td>
+            </tr>
+        </table>
+    </div>
     <button id="hide-crt">hide</button>
     <button id="show-crt">show</button>
     <button id="toggle-crt">toggle</button>

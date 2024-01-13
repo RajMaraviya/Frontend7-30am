@@ -24,13 +24,14 @@ export function ChImg()
 
 export default function Home() {
 
+
   let styleActive = {}
 
   const Navigate = useNavigate();
   const [product, setproduct] = useState(null);
 
   useEffect(() => {
-    axios.get("http://localhost:4000/product")
+    axios.get("https://project-data-8dy4.onrender.com/product")
       .then((response) => {
         setproduct(response.data)
       });
@@ -97,12 +98,12 @@ export default function Home() {
                         </div>
                     </div>
                   <div className="des">
-                    <span>adidas</span>
-                    <h5>{pro.pname}</h5>
+                    <span key={pro.category}>{pro.category}</span>
+                    <h5 key={pro.pname}>{pro.pname}</h5>
                     <div className="star">
-                    <p><i className="bi bi-star-fill fs-6"></i> {pro.rating}</p>
+                    <p key={pro.rating}><i className="bi bi-star-fill fs-6"></i> {pro.rating}</p>
                     </div>
-                    <p className='my-1'>₹<s>{pro.price}</s>&nbsp; &nbsp;<b>₹{pro.offerprice}</b></p>
+                    <p className='my-1'>₹<s key={pro.price}>{pro.price}</s>&nbsp; &nbsp;<b key={pro.offerprice}>₹{pro.offerprice}</b></p>
                   </div>
                   {/* <Link to=`/Cart/id=${pro.id}`><i className="bi bi-cart3 cart"></i></Link> */}
                   <button className='cart' onClick={()=> Navigate(`/Cart/${pro.id}`)}><i className="bi bi-cart3"></i></button>

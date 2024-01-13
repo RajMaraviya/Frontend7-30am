@@ -1,7 +1,19 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Outlet, Link } from 'react-router-dom';
 import Navigation from '../NavigationScript';
-export default function Navbar() {
+import jQuery from 'jquery';
+
+
+export default function Navbar(props) {
+    useEffect(()=>{
+        (function($){
+            $('ul').on("click", 'li a', function() {
+                $('ul li a.active').removeClass('active');
+                $(this).addClass('active');
+              });
+        })(jQuery);
+    })
+
     const [showNavSecond, setShowNavSecond] = useState(false);
     return (
         <>
@@ -9,13 +21,13 @@ export default function Navbar() {
                 <Link to="#" className='animate-logo'><img src="img/main-logo.png" alt="logo" className="logo" /></Link>
                 <div>
                     <ul id="navbar">
-                        <li><Link to="/">Home</Link></li>  {/* className="active" */}
+                        <li><Link to="/" className='active'>Home</Link></li>  {/* className="active" */}
                         <li><Link to="/shop">Shop</Link></li>
                         <li><Link to="/Blog">Blog</Link></li>
                         <li><Link to="/about">About</Link></li>
                         <li><Link to="/Contact">Contact</Link></li>
                         <li className="nav-item dropdown">
-                            <Link id="profileDropdown" to="" data-bs-toggle="dropdown">Account</Link>
+                            <Link id="profileDropdown" data-bs-toggle="dropdown" ><i className="bi bi-person-circle"></i></Link>
                             <div className="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown">
                                 <h6 className="p-2">Profile</h6>
                                 <div className="dropdown-divider"></div>

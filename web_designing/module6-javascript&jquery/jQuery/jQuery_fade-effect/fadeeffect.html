@@ -44,8 +44,8 @@
     </style>
     <script>
         $(document).ready(function(){
-            $("#navbar h1").click(function(){
-                $("#login").fadeToggle(1000); //1000ms time, slow, fast
+            $("#navbar Button").click(function(){
+                $("#login").slideToggle(500); //1000ms time, slow, fast
             })
         })
     </script>
@@ -53,8 +53,19 @@
 
 <body>
     
-        <div id="navbar">
+        <!-- <div id="navbar">
             <h1><a href="#">login here</a></h1>
+        </div>
+
+        <div id="login">
+            <h3>login form</h3>
+            <hr>
+            <input type="text" name="" id="" placeholder="Name"><br><br>
+            <input type="password" name="" id="" placeholder="password"><br><br>
+            <button type="submit">submit</button>
+        </div> -->
+        <div id="navbar">
+            <Button><a href="#">login here</a></Button>
         </div>
 
         <div id="login">

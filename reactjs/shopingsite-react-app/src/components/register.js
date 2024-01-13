@@ -27,7 +27,7 @@ export default function Register() {
                         <div class="form-check form-check-flat form-check-primary">
                                 <input type="checkbox" class="form-check-input bg-transparent border-white" />Remember
                         </div>
-                        <button type="submit" class="btn btn-primary me-2">Register</button>
+                        <button type="submit" class="btn btn-primary me-2"><Link to="/" className='text-decoration-none text-white'>Register</Link></button>
                         <button class="btn btn-dark" type='reset'>Cancel</button><br />
                         <Link to="/admin-login" className=''>Existing User? Log in</Link>
                     </form>

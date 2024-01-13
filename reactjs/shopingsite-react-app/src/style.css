@@ -225,6 +225,7 @@ img.logo {
 #navbar li a:hover,
 #navbar li a.active {
     color: var(--dark-blue);
+    transition: 0.5s ease;
 }
 
 #navbar li a.active::after,
@@ -236,6 +237,16 @@ img.logo {
     position: absolute;
     bottom: -4px;
     left: 20px;
+    transition: 0.5s ease;
+    animation: Content 0.2s ease-in-out;
+}
+@keyframes Content {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
 }
 
 #mobile {
@@ -1139,6 +1150,7 @@ footer .copyright {
     #navbar li a {
         color: var(--ocean-blue);
     }
+
     #navbar.active {
         right: 0px;
     }
